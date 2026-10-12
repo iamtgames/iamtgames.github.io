@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>404 · iamT</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=VT323&display=swap">
+<style>
+:root{--ink:#0b0a0d;--paper:#ece7dc;--magenta:#ff2fd1;--acid:#d6ff1f;--cyan:#18f0ff}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;display:grid;place-items:center;padding:24px 16px;background:#a29d93;color:var(--ink);font:1.3rem/1.4 "VT323",ui-monospace,monospace;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.035' numOctaves='5'/%3E%3CfeColorMatrix values='0 0 0 0 .2 0 0 0 0 .19 0 0 0 0 .18 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E")}
+main{display:grid;gap:18px;justify-items:start;max-width:560px}
+h1{margin:0;font:900 clamp(7rem,30vw,14rem)/.8 "Big Shoulders Display",Impact,sans-serif;filter:drop-shadow(3px 3px 0 var(--magenta)) drop-shadow(3px 3px 0 var(--cyan)) drop-shadow(4px 4px 0 #000)}
+p{margin:0;background:var(--ink);color:var(--acid);padding:10px 14px;border:3px solid #000;box-shadow:6px 6px 0 var(--magenta)}
+a{display:inline-block;color:var(--ink);background:var(--acid);border:3px solid #000;padding:10px 16px;text-decoration:none;box-shadow:5px 5px 0 #000;font-size:1.4rem}
+a:hover{background:var(--magenta);color:#fff}
+</style>
+</head>
+<body>
+<main>
+  <h1>404</h1>
+  <p id="msg">&gt; dossiê não encontrado. Esta página não existe ou mudou de lugar.</p>
+  <a id="back" href="/">← voltar para iamT</a>
+</main>
+<script>
+(function(){var l;try{l=localStorage.getItem("iamt_lang")}catch(e){}
+if(l==="en"||(!l&&!/^pt/i.test(navigator.language||"pt"))){document.documentElement.lang="en";document.getElementById("msg").textContent="> file not found. This page doesn't exist or has moved.";document.getElementById("back").textContent="← back to iamT"}})();
+</script>
+</body>
+</html>
