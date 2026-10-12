@@ -1,0 +1,318 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Gerador de Protocolos · iamT</title><meta name="description" content="Estudo de caso do Gerador de Protocolos, programa de Windows feito por iamT para um escritório contábil."><link rel="icon" href="../favicon.svg" type="image/svg+xml"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: estudo de caso em coluna de leitura, com imagens que vazam para uma faixa larga; o protocolo A4 é a peça central, anotado como um documento de verdade. */
+:root {
+  --paper: #f3f6f6;
+  --sheet: #ffffff;
+  --ink: #12323a;
+  --muted: #557079;
+  --rule: #d3dfe1;
+  --teal: #00809a;
+  --teal-deep: #0c3c47;
+  --mark: #b8862b;
+  --shadow: 0 1px 2px rgba(12,60,71,.06), 0 12px 32px -12px rgba(12,60,71,.22);
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --read: 40rem;
+  --wide: 72rem;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #0d1b1f; --sheet: #13262b; --ink: #e3eef0; --muted: #93adb4; --rule: #24404a;
+  --teal: #3fb7cc; --teal-deep: #0a2e36; --mark: #d9a64a;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 14px 36px -14px rgba(0,0,0,.7); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #0d1b1f; --sheet: #13262b; --ink: #e3eef0; --muted: #93adb4; --rule: #24404a;
+  --teal: #3fb7cc; --teal-deep: #0a2e36; --mark: #d9a64a;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 14px 36px -14px rgba(0,0,0,.7); color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.65 var(--body); padding-inline: 20px; padding-block: 0 4rem; -webkit-font-smoothing: antialiased }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.1; text-wrap: balance; margin: 0; letter-spacing: -0.015em }
+p { margin: 0 }
+.col { max-width: var(--read); margin-inline: auto }
+.wide { max-width: var(--wide); margin-inline: auto }
+.label { font: 500 .75rem/1.2 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--teal) }
+a { color: var(--teal) }
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px }
+
+/* Cabeçalho */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding-block: 1.5rem; border-bottom: 1px solid var(--rule) }
+.top .brand { font: 500 .8125rem var(--mono); color: var(--muted) }
+.top .brand b { color: var(--ink); font-weight: 500 }
+
+/* Hero */
+.hero { padding-block: clamp(2.5rem, 7vw, 5rem) 2rem; display: grid; gap: 1.75rem }
+.stamp { display: inline-flex; align-items: center; gap: .6rem; font: 500 .8125rem var(--mono); color: var(--teal); border: 1.5px solid var(--teal); border-radius: 4px; padding: .3rem .65rem; transform: rotate(-1.5deg); width: max-content; max-width: 100% }
+.hero h1 { font-size: clamp(2.5rem, 7vw, 4.75rem) }
+.hero h1 span { color: var(--teal) }
+.lede { font-size: clamp(1.125rem, 2.2vw, 1.3rem); color: var(--muted); max-width: 36rem }
+.facts { display: flex; flex-wrap: wrap; gap: .5rem 2rem; padding-top: .5rem }
+.facts div { display: grid; gap: .15rem }
+.facts dt { font: 500 .7rem var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted) }
+.facts dd { margin: 0; font-weight: 500 }
+
+/* Janela do programa */
+.window { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; box-shadow: var(--shadow); overflow: hidden }
+.window .bar { display: flex; align-items: center; gap: .75rem; padding: .55rem .9rem; border-bottom: 1px solid var(--rule); font: 500 .75rem var(--mono); color: var(--muted) }
+.window .bar i { display: flex; gap: 5px }
+.window .bar i::before, .window .bar i::after, .window .bar i b { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--rule); display: block }
+.window img { display: block; width: 100%; height: auto }
+figure { margin: 0 }
+figcaption { font-size: .875rem; color: var(--muted); padding-top: .75rem; max-width: var(--read) }
+.hero-shot { margin-top: 1rem }
+
+/* Seções */
+section { padding-block: clamp(3rem, 8vw, 5.5rem) 0 }
+section h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-top: .6rem }
+section .intro { margin-top: 1.1rem; display: grid; gap: 1rem }
+
+/* Antes/depois */
+.contrast { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; margin-top: 2rem }
+.contrast > div { background: var(--sheet); padding: 1.25rem 1.4rem; min-width: 0 }
+.contrast h3 { font: 500 .75rem var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: .8rem }
+.contrast .after h3 { color: var(--teal) }
+.contrast ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .6rem }
+.contrast li { padding-left: 1.1rem; position: relative; font-size: .975rem; line-height: 1.5 }
+.contrast li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 1.5px; background: var(--muted) }
+.contrast .after li::before { background: var(--teal); height: 2px }
+
+/* Resultados */
+.results { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2rem 2.5rem; margin-top: 2.5rem }
+.results div { border-top: 2px solid var(--ink); padding-top: .9rem; display: grid; gap: .4rem; align-content: start }
+.results strong { font: 700 1.6rem/1.1 var(--display) }
+.results p { color: var(--muted); font-size: .95rem; line-height: 1.5 }
+
+/* Fluxo */
+.flow { display: grid; gap: clamp(2.5rem, 6vw, 4rem); margin-top: 2.5rem }
+.step { display: grid; grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); gap: 2rem; align-items: center }
+.step .txt { display: grid; gap: .6rem }
+.step .n { font: 500 .8125rem var(--mono); color: var(--teal) }
+.step h3 { font-size: 1.4rem }
+.step p { color: var(--muted) }
+
+/* Documento */
+.doc { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); margin-top: 2.5rem; align-items: start }
+.sheet { background: #fff; box-shadow: var(--shadow); border-radius: 2px; position: relative }
+.sheet img { display: block; width: 100%; height: auto }
+.sheet .pin { position: absolute; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--mark); color: #fff; font: 500 .8rem/1.6rem var(--mono); text-align: center; box-shadow: 0 0 0 4px color-mix(in srgb, var(--mark) 25%, transparent); transform: translate(-50%, -50%) }
+.notes { margin: 0; padding: 0; list-style: none; display: grid; gap: 1.4rem; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 1.5rem) }
+.notes li { display: grid; grid-template-columns: 1.6rem 1fr; gap: .9rem }
+.notes .k { width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--mark); color: #fff; font: 500 .8rem/1.6rem var(--mono); text-align: center }
+.notes h3 { font-size: 1.05rem; font-family: var(--body); font-weight: 600; letter-spacing: 0; margin-bottom: .2rem }
+.notes p { color: var(--muted); font-size: .95rem; line-height: 1.55 }
+.filename { font: 400 .8rem var(--mono); background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; padding: .15rem .4rem; word-break: break-all }
+
+/* Galeria */
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 2rem; margin-top: 2.5rem }
+.gallery .tall { grid-row: span 2 }
+.gallery .tall .sheet { max-width: 26rem }
+
+/* Técnico */
+.tech { background: var(--teal-deep); color: #e3eef0; border-radius: 12px; padding: clamp(1.75rem, 5vw, 3.5rem); margin-top: clamp(3rem, 8vw, 5.5rem) }
+.tech .label { color: #7fd3e2 }
+.tech h2 { color: #fff }
+.tech .intro p { color: #b9d0d5 }
+.stack { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.75rem 2.5rem; margin-top: 2.25rem }
+.stack div { display: grid; gap: .35rem; align-content: start }
+.stack h3 { font: 600 1rem var(--body); letter-spacing: 0; color: #fff }
+.stack p { color: #b9d0d5; font-size: .95rem; line-height: 1.55 }
+.stack code { font: 400 .85em var(--mono); color: #7fd3e2 }
+.tests { margin-top: 2.5rem; border-top: 1px solid rgba(255,255,255,.14); padding-top: 1.75rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1.25rem }
+.tests div { display: grid; gap: .2rem }
+.tests strong { font: 500 1.6rem var(--mono); color: #fff; font-variant-numeric: tabular-nums }
+.tests span { font-size: .875rem; color: #b9d0d5 }
+
+footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font-size: .875rem; color: var(--muted); display: grid; gap: .4rem }
+
+@media (max-width: 760px) {
+  .contrast, .step, .doc, .gallery { grid-template-columns: minmax(0, 1fr) }
+  .gallery .tall { grid-row: auto }
+  .notes { position: static }
+  .step .txt { order: -1 }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero > * { animation: rise .6s cubic-bezier(.2,.7,.2,1) both }
+  .hero > *:nth-child(2) { animation-delay: .06s }
+  .hero > *:nth-child(3) { animation-delay: .12s }
+  .hero > *:nth-child(4) { animation-delay: .18s }
+  @keyframes rise { from { transform: translateY(8px) } to { transform: none } }
+}
+</style>
+
+<a href="../#protocolos" style="position:fixed;z-index:50;left:16px;top:calc(env(safe-area-inset-top,0px) + 12px);font:500 13px/1 'IBM Plex Mono',ui-monospace,monospace;color:#fff;background:#0b0a0d;border:2px solid #000;padding:9px 12px;text-decoration:none;box-shadow:3px 3px 0 #ff2fd1">← iamT</a>
+<header class="top wide" style="padding-top:3.4rem">
+  <span class="brand"><b>Estudo de caso</b> · Software para escritório contábil</span>
+  <span class="brand">Windows · 2026</span>
+</header>
+
+<main>
+  <div class="hero wide">
+    <span class="stamp">PROTOCOLO Nº 000036/2026</span>
+    <h1>Gerador de <span>Protocolos</span></h1>
+    <p class="lede">Um programa de Windows que transforma o fechamento do mês de um escritório contábil em três passos: escolher o cliente, lançar as guias e salvar. O protocolo de entrega sai pronto em PDF, em duas vias, já arquivado na pasta do cliente.</p>
+    <dl class="facts">
+      <div><dt>Para quem</dt><dd>Escritórios de contabilidade</dd></div>
+      <div><dt>Plataforma</dt><dd>Windows, sem internet</dd></div>
+      <div><dt>Entrega</dt><dd>Instalador .exe de um clique</dd></div>
+    </dl>
+  </div>
+
+  <figure class="wide hero-shot">
+    <div class="window">
+      <div class="bar"><i><b></b></i>Gerador de Protocolos · Painel</div>
+      <img src="img/painel.webp" width="1800" height="1125" alt="Painel do programa com total do mês, protocolos emitidos, gráfico de evolução mensal e distribuição por categoria de guia">
+    </div>
+    <figcaption>Painel de outubro: valor total entregue aos clientes, protocolos do mês e evolução nos últimos meses.</figcaption>
+  </figure>
+
+  <section class="col" id="problema">
+    <span class="label">O problema</span>
+    <h2>Todo mês, a mesma papelada montada à mão</h2>
+    <div class="intro">
+      <p>No fim de cada mês o escritório entrega a cada cliente as guias a pagar: INSS, FGTS, Simples, folha, honorário. Cada entrega precisa de um protocolo assinado, que comprova o que foi entregue, com valores e vencimentos.</p>
+      <p>Esse protocolo era montado num editor de texto, copiado do mês anterior e somado na calculadora. A numeração dependia da memória de quem digitava, e encontrar o protocolo de um cliente de três meses atrás significava procurar em pastas soltas.</p>
+    </div>
+    <div class="contrast">
+      <div>
+        <h3>Antes</h3>
+        <ul>
+          <li>Documento copiado e editado para cada cliente</li>
+          <li>Total somado à parte, sujeito a erro</li>
+          <li>Numeração controlada manualmente</li>
+          <li>Arquivos espalhados, sem histórico</li>
+        </ul>
+      </div>
+      <div class="after">
+        <h3>Depois</h3>
+        <ul>
+          <li>Itens copiados do mês anterior com as datas já avançadas</li>
+          <li>Total calculado pelo sistema, em centavos exatos</li>
+          <li>Numeração automática que nunca se repete</li>
+          <li>PDF salvo na pasta de cada cliente, por ano</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="col" id="resultado">
+    <span class="label">O resultado</span>
+    <h2>O que o escritório ganhou</h2>
+    <div class="results">
+      <div><strong>1 clique</strong><p>Salvar o protocolo gera o PDF, arquiva na pasta do cliente e abre a impressão.</p></div>
+      <div><strong>2 vias, 1 folha</strong><p>Via do escritório e via do cliente na mesma página A4, prontas para assinar.</p></div>
+      <div><strong>5 períodos</strong><p>Relatórios mensal, trimestral, semestral, anual ou por datas, exportáveis em PDF.</p></div>
+      <div><strong>0 internet</strong><p>Tudo fica no computador. O backup leva os dados para outra máquina em um arquivo.</p></div>
+    </div>
+  </section>
+
+  <section class="wide" id="fluxo">
+    <div class="col" style="margin-inline:0">
+      <span class="label">Como funciona</span>
+      <h2>Do lançamento à impressão</h2>
+    </div>
+    <div class="flow">
+      <div class="step">
+        <div class="txt">
+          <span class="n">Passo 1</span>
+          <h3>Escolher o cliente e o mês</h3>
+          <p>A busca aceita nome ou CNPJ. Com um clique, as guias do mês anterior entram na lista com os vencimentos já ajustados para o novo mês. Só falta conferir os valores.</p>
+        </div>
+        <figure class="window"><div class="bar"><i><b></b></i>Novo protocolo</div><img src="img/novo-protocolo.webp" width="1800" height="1125" alt="Tela de novo protocolo com cliente selecionado e guias copiadas do mês anterior" loading="lazy"></figure>
+      </div>
+      <div class="step">
+        <div class="txt">
+          <span class="n">Passo 2</span>
+          <h3>Lançar e revisar as guias</h3>
+          <p>Cada linha tem categoria, vencimento, valor e observação. O total é recalculado a cada alteração e um mesmo cliente não pode ter dois protocolos na mesma competência.</p>
+        </div>
+        <figure class="window"><div class="bar"><i><b></b></i>Protocolo Nº 000036/2026</div><img src="img/lancamento.webp" width="1800" height="1125" alt="Editor do protocolo com cinco guias lançadas e total do documento" loading="lazy"></figure>
+      </div>
+      <div class="step">
+        <div class="txt">
+          <span class="n">Passo 3</span>
+          <h3>Salvar, e o PDF já está pronto</h3>
+          <p>Ao salvar, o programa grava o PDF na pasta do cliente, mostra a prévia e abre a impressão. Se o protocolo for editado depois, o PDF é atualizado sozinho.</p>
+        </div>
+        <figure class="window"><div class="bar"><i><b></b></i>Visualizar protocolo</div><img src="img/previa.webp" width="1800" height="1125" alt="Janela de prévia mostrando o protocolo em A4 com botões de abrir PDF e imprimir" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="wide" id="documento">
+    <div class="col" style="margin-inline:0">
+      <span class="label">A peça principal</span>
+      <h2>Um documento feito para ser assinado</h2>
+      <div class="intro"><p>O protocolo é o que o cliente vê. Ele foi desenhado como um documento formal: legível impresso em preto e branco, sempre em uma única página, mesmo com 16 linhas e textos no tamanho máximo.</p></div>
+    </div>
+    <div class="doc">
+      <figure class="sheet">
+        <img src="img/protocolo-a4.webp" width="1406" height="1986" alt="Protocolo de entrega em A4 com duas vias idênticas, logotipo, tabela de guias, total e área de assinatura" loading="lazy">
+        <span class="pin" style="left:3.5%;top:5.2%">1</span>
+        <span class="pin" style="left:76%;top:2.6%">2</span>
+        <span class="pin" style="left:27%;top:22%">3</span>
+        <span class="pin" style="left:3.5%;top:44.6%">4</span>
+        <span class="pin" style="left:50%;top:50%">5</span>
+      </figure>
+      <ol class="notes">
+        <li><span class="k">1</span><div><h3>Identidade do escritório</h3><p>Logotipo, razão social, CNPJ e contato distribuídos em linhas que nunca cortam o e-mail ou o telefone.</p></div></li>
+        <li><span class="k">2</span><div><h3>Via e numeração</h3><p>Cada via é identificada. O número segue a sequência do ano e nunca é reaproveitado, nem depois de uma exclusão.</p></div></li>
+        <li><span class="k">3</span><div><h3>Marca d'água configurável</h3><p>Logotipo ou texto, com posição, tamanho e opacidade ajustáveis, discreta o bastante para não atrapalhar a leitura.</p></div></li>
+        <li><span class="k">4</span><div><h3>Assinatura e data</h3><p>Espaço para o cliente assinar e datar o recebimento na via do escritório.</p></div></li>
+        <li><span class="k">5</span><div><h3>Linha de corte</h3><p>As duas vias são idênticas e separadas por uma linha tracejada. O arquivo recebe um nome legível, como <span class="filename">PROTOCOLO_PADARIA_PAO_DOURADO_OUTUBRO_2026.pdf</span></p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="wide" id="telas">
+    <div class="col" style="margin-inline:0">
+      <span class="label">Outras telas</span>
+      <h2>Relatórios, clientes e configuração</h2>
+    </div>
+    <div class="gallery">
+      <figure>
+        <div class="window"><div class="bar"><i><b></b></i>Relatórios</div><img src="img/relatorios.webp" width="1800" height="1125" alt="Relatório trimestral com total do período, número de lançamentos, protocolos e clientes, e gráfico por mês" loading="lazy"></div>
+        <figcaption>Relatório do 3º trimestre: totais por mês, por categoria e por cliente.</figcaption>
+      </figure>
+      <figure class="tall">
+        <div class="sheet"><img src="img/relatorio-pdf.webp" width="1075" height="1521" alt="Primeira página do relatório semestral exportado em PDF, com tabelas por mês, categoria e cliente" loading="lazy"></div>
+        <figcaption>O mesmo relatório exportado em PDF, pronto para enviar ao sócio ou arquivar.</figcaption>
+      </figure>
+      <figure>
+        <div class="window"><div class="bar"><i><b></b></i>Clientes</div><img src="img/clientes.webp" width="1800" height="1125" alt="Lista de clientes com CNPJ, contato, cidade e quantidade de protocolos" loading="lazy"></div>
+        <figcaption>Cadastro de clientes com validação de CNPJ e CPF. Cada cliente ganha sua pasta de PDFs.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="tech wide" id="tecnico">
+    <span class="label">Para quem quer os detalhes</span>
+    <h2>Como foi construído</h2>
+    <div class="intro" style="max-width:var(--read)">
+      <p>O pedido era um programa de verdade: instalar com dois cliques, abrir numa janela própria e funcionar sem internet, num único computador. A interface é web por dentro, empacotada como aplicativo de desktop.</p>
+    </div>
+    <div class="stack">
+      <div><h3>Interface</h3><p>Next.js 15 e React 19 com TypeScript e Tailwind. Validação de formulários com zod e gráficos com Recharts.</p></div>
+      <div><h3>Aplicativo Windows</h3><p>Electron com instalador NSIS em português. O servidor interno roda escondido, só no endereço local, sem janela de terminal.</p></div>
+      <div><h3>Dados</h3><p>SQLite com Prisma, num único arquivo em <code>%APPDATA%</code>. Migrações aplicadas sozinhas ao abrir e backup automático diário.</p></div>
+      <div><h3>Documentos</h3><p>PDF gerado com <code>@react-pdf/renderer</code> e impressão nativa em A4 sem margens. As fontes vão embutidas para o PDF sair igual em qualquer máquina.</p></div>
+      <div><h3>Dinheiro sem arredondamento</h3><p>Valores guardados em centavos inteiros. Totais sempre recalculados a partir dos itens, nunca digitados.</p></div>
+      <div><h3>Portabilidade</h3><p>Exportar e restaurar backup em um arquivo JSON. Desinstalar ou atualizar o programa não apaga os dados.</p></div>
+    </div>
+    <div class="tests">
+      <div><strong>19</strong><span>testes das regras de negócio</span></div>
+      <div><strong>28</strong><span>etapas de teste no navegador</span></div>
+      <div><strong>6</strong><span>cenários de estresse do A4, todos em 1 página</span></div>
+      <div><strong>13</strong><span>etapas no programa instalado</span></div>
+    </div>
+  </div>
+
+  <footer class="wide">
+    <p>Todas as empresas, CNPJs, valores e o escritório mostrados nas imagens são fictícios, criados para esta demonstração.</p>
+  </footer>
+</main>
+
+</body></html>
