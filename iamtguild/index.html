@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>iamT Guild · Baixar o jogo</title>
+<meta name="description" content="iamT Guild: desça na Fenda, enfrente hordas de criaturas e volte para cuidar da sua casa em Valenport. Baixe grátis para Windows.">
+<meta property="og:title" content="iamT Guild — baixe grátis para Windows">
+<meta property="og:description" content="Desça na Fenda, enfrente hordas e volte para cuidar da sua casa em Valenport. Plante, construa e sobreviva.">
+<meta property="og:image" content="https://www.iamt.com.br/iamtguild/img/compartilhar.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icone.png" type="image/png">
+<link rel="apple-touch-icon" href="img/icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+/* Página de download do iamT Guild — escura como o jogo: pedra, ouro velho e o vermelho da Fenda. */
+:root {
+  --noite: #0d0a0c;
+  --pedra: #17121a;
+  --pedra-2: #211a24;
+  --linha: #3a2c33;
+  --texto: #ece3d2;
+  --apagado: #a99b8a;
+  --ouro: #d9a441;
+  --ouro-claro: #f3cf7a;
+  --fenda: #c8323c;
+  --fenda-escura: #7a1520;
+  --titulo: "Cinzel", Georgia, serif;
+  --corpo: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box }
+html { scroll-behavior: smooth }
+body { margin: 0; background: var(--noite); color: var(--texto); font: 400 1.0625rem/1.6 var(--corpo); -webkit-font-smoothing: antialiased }
+img { max-width: 100%; display: block }
+a { color: var(--ouro-claro) }
+:focus-visible { outline: 2px solid var(--ouro-claro); outline-offset: 3px }
+h1, h2, h3 { font-family: var(--titulo); font-weight: 800; line-height: 1.15; margin: 0; letter-spacing: .02em }
+p { margin: 0 }
+.faixa { max-width: 70rem; margin-inline: auto; padding-inline: 20px }
+
+/* Topo */
+.topo { position: absolute; inset: 0 0 auto; z-index: 2 }
+.topo .faixa { display: flex; justify-content: space-between; align-items: center; padding-block: 1rem; font-size: .9rem }
+.topo a { color: var(--apagado); text-decoration: none }
+.topo a:hover { color: var(--texto) }
+
+/* Abertura */
+.abertura { position: relative; min-height: min(92vh, 52rem); display: grid; place-items: center; text-align: center; overflow: hidden; isolation: isolate; padding: 6rem 0 4rem }
+.abertura::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("img/fundo.webp") center / cover no-repeat; filter: saturate(1.1) }
+.abertura::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 50% 40%, rgba(13,10,12,.25), rgba(13,10,12,.85) 70%), linear-gradient(to bottom, transparent 60%, var(--noite)) }
+.logo { width: min(40rem, 88vw); height: auto; margin-inline: auto; filter: drop-shadow(0 6px 30px rgba(200,50,60,.35)) }
+.chamada { margin-top: 1.25rem; font-size: clamp(1.1rem, 2.4vw, 1.35rem); color: var(--texto); max-width: 36rem; margin-inline: auto; text-shadow: 0 2px 12px #000 }
+.chamada em { color: var(--ouro-claro); font-style: normal }
+.baixar { margin-top: 2.25rem; display: grid; justify-items: center; gap: .8rem }
+.botao { display: inline-flex; align-items: center; gap: .85rem; padding: 1rem 1.75rem; border-radius: 6px; text-decoration: none; font: 800 1.15rem/1.1 var(--titulo); letter-spacing: .04em; color: #1b0f08; background: linear-gradient(to bottom, var(--ouro-claro), var(--ouro)); border: 1px solid #f7dc98; box-shadow: 0 0 0 3px rgba(217,164,65,.18), 0 10px 30px -8px rgba(217,164,65,.6); transition: transform .15s, box-shadow .15s }
+.botao:hover { transform: translateY(-2px); box-shadow: 0 0 0 4px rgba(217,164,65,.3), 0 14px 36px -8px rgba(217,164,65,.75) }
+.botao svg { width: 1.4rem; height: 1.4rem; flex: none }
+.botao small { display: block; font: 500 .85rem var(--corpo); letter-spacing: 0; margin-top: .25rem; color: #4a3015 }
+.detalhes { font-size: .92rem; color: var(--apagado) }
+.detalhes a { color: var(--apagado) }
+
+/* Seções */
+section { padding-block: clamp(3rem, 8vw, 5.5rem) }
+.rotulo { font: 600 .8rem var(--titulo); letter-spacing: .18em; text-transform: uppercase; color: var(--fenda) }
+.secao-titulo { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-top: .4rem; color: var(--ouro-claro) }
+
+/* Galeria */
+.galeria { margin-top: 2rem; display: grid; gap: 14px; grid-template-columns: repeat(6, 1fr) }
+.galeria figure { margin: 0; border: 1px solid var(--linha); border-radius: 6px; overflow: hidden; background: var(--pedra); grid-column: span 3 }
+.galeria figure.grande { grid-column: span 6 }
+.galeria figure.terco { grid-column: span 2 }
+.galeria img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover }
+.galeria { align-items: start }
+.galeria figcaption { padding: .6rem .85rem; font-size: .92rem; color: var(--apagado) }
+.galeria figcaption b { color: var(--texto); font-weight: 500 }
+
+/* O que tem no jogo */
+.pilares { margin-top: 2rem; display: grid; gap: 1px; background: var(--linha); border: 1px solid var(--linha); border-radius: 6px; overflow: hidden; grid-template-columns: repeat(3, 1fr) }
+.pilar { background: var(--pedra); padding: 1.5rem 1.4rem 1.6rem }
+.pilar h3 { font-size: 1.15rem; color: var(--ouro-claro) }
+.pilar p { margin-top: .55rem; color: var(--apagado) }
+.pilar .num { font: 800 .85rem var(--titulo); color: var(--fenda); letter-spacing: .1em }
+
+/* Como instalar */
+.instalar { display: grid; gap: 2.5rem; grid-template-columns: 1fr 1fr; align-items: start }
+.passos { list-style: none; margin: 1.5rem 0 0; padding: 0; counter-reset: p; display: grid; gap: 1rem }
+.passos li { counter-increment: p; display: grid; grid-template-columns: 2.4rem 1fr; gap: .9rem; align-items: start }
+.passos li::before { content: counter(p); display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1.5px solid var(--ouro); color: var(--ouro-claro); font: 800 1rem var(--titulo) }
+.passos b { color: var(--texto) }
+.passos p { color: var(--apagado) }
+.aviso { margin-top: 1.5rem; border: 1px solid var(--linha); border-left: 3px solid var(--ouro); background: var(--pedra); padding: 1rem 1.15rem; border-radius: 4px; color: var(--apagado); font-size: .97rem }
+.aviso b { color: var(--texto) }
+.ficha { border: 1px solid var(--linha); border-radius: 6px; background: var(--pedra); padding: 1.4rem 1.4rem 1.2rem }
+.ficha h3 { font-size: 1.1rem; color: var(--ouro-claro) }
+.ficha dl { margin: 1rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: .55rem 1rem; font-size: .97rem }
+.ficha dt { color: var(--apagado) }
+.ficha dd { margin: 0 }
+.ficha .outra { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--linha); font-size: .95rem; color: var(--apagado) }
+
+/* Final */
+.final { text-align: center; border-top: 1px solid var(--linha); background: radial-gradient(ellipse at 50% 0%, rgba(200,50,60,.16), transparent 65%) }
+.final .baixar { margin-top: 1.5rem }
+footer { padding: 2rem 0 3rem; text-align: center; color: var(--apagado); font-size: .9rem }
+footer a { color: var(--apagado) }
+
+@media (max-width: 760px) {
+  .galeria { grid-template-columns: 1fr }
+  .galeria figure, .galeria figure.grande, .galeria figure.terco { grid-column: auto }
+  .pilares { grid-template-columns: 1fr }
+  .instalar { grid-template-columns: 1fr }
+  .botao { padding: .9rem 1.25rem; font-size: 1.02rem }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } .botao { transition: none } }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="faixa">
+    <a href="/">← iamT</a>
+    <a href="#instalar">Como instalar</a>
+  </div>
+</header>
+
+<main>
+  <div class="abertura">
+    <div class="faixa">
+      <h1><img class="logo" src="img/logo.webp" width="1100" height="380" alt="iamT Guild"></h1>
+      <p class="chamada">A Fenda sangra sobre Aethelgard e cospe masmorras vivas. Desça, enfrente as hordas e volte para Valenport para cuidar da sua casa. <em>Plante, construa e sobreviva.</em></p>
+      <div class="baixar">
+        <a class="botao" data-baixar="instalador" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.2 4.5v7H3zm0 13 7.2 1v-6.9H3zm8.1 1.1L21 21v-8.4h-9.9zm0-15.2v7.1H21V3z"/></svg>
+          <span>Baixar para Windows<small data-info="instalador">Instalador · grátis</small></span>
+        </a>
+        <p class="detalhes">Windows 10 ou 11 (64 bits) · <a href="#instalar">como instalar</a></p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="faixa">
+      <p class="rotulo">Veja o jogo</p>
+      <h2 class="secao-titulo">Da Fenda até a sua casa</h2>
+      <div class="galeria">
+        <figure class="grande"><img src="img/combate.webp" width="1280" height="720" alt="O herói no meio de uma horda de criaturas, com poderes explodindo em volta" loading="lazy"><figcaption><b>A Fenda.</b> Hordas que crescem a cada minuto, poderes que se combinam e um chefe no fim.</figcaption></figure>
+        <figure><img src="img/feira.webp" width="1280" height="720" alt="Dia de feira na praça de Valenport, com barracas e moradores" loading="lazy"><figcaption><b>Valenport.</b> Moradores com rotina, feiras, festas e uma cidade que cresce com você.</figcaption></figure>
+        <figure><img src="img/casa.webp" width="1280" height="720" alt="A casa do herói ampliada, com horta e quintal" loading="lazy"><figcaption><b>A sua casa.</b> Amplie, mobilie, plante na horta e contrate ajudantes.</figcaption></figure>
+        <figure class="terco"><img src="img/neve.webp" width="1280" height="720" alt="A rua coberta de neve com um boneco de neve na praça" loading="lazy"><figcaption><b>O clima muda tudo.</b> Neve, alagamento, seca e eventos na cidade.</figcaption></figure>
+        <figure class="terco"><img src="img/fenda_rubra.webp" width="1280" height="720" alt="O herói e dois aliados cercados na Fenda Rubra" loading="lazy"><figcaption><b>Fenda Rubra.</b> Leve aliados e aguente o quanto puder.</figcaption></figure>
+        <figure class="terco"><img src="img/missoes.webp" width="1280" height="720" alt="O Quadro de missões da Guilda com uma missão de contato" loading="lazy"><figcaption><b>Missões da Guilda.</b> Contratos, contatos na cidade e o rank que sobe.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="faixa">
+      <p class="rotulo">O que tem no jogo</p>
+      <h2 class="secao-titulo">Desça, volte, cresça</h2>
+      <div class="pilares">
+        <div class="pilar"><p class="num">I</p><h3>Masmorras vivas</h3><p>Catorze masmorras, cada uma com criaturas, guardiões e chefe próprios. Escolha poderes a cada nível e monte o seu jeito de lutar.</p></div>
+        <div class="pilar"><p class="num">II</p><h3>Equipamento e classes</h3><p>Peças comuns até lendárias, com poderes exclusivos. O que você veste define a sua classe.</p></div>
+        <div class="pilar"><p class="num">III</p><h3>Uma vida na cidade</h3><p>Coma, beba, cozinhe, plante, compre imóveis, adote um pet e veja Valenport prosperar. Um guia mostra o próximo passo para quem está começando.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instalar" style="padding-top:0">
+    <div class="faixa instalar">
+      <div>
+        <p class="rotulo">Como instalar</p>
+        <h2 class="secao-titulo">Três passos</h2>
+        <ol class="passos">
+          <li><div><b>Baixe o instalador</b><p>Clique em "Baixar para Windows". O arquivo vai para a sua pasta Downloads.</p></div></li>
+          <li><div><b>Abra o arquivo</b><p>Dê dois cliques nele e siga as telas. Ele cria um atalho na Área de Trabalho e no Menu Iniciar.</p></div></li>
+          <li><div><b>Jogue</b><p>Abra o iamT Guild pelo atalho. O seu progresso fica salvo no computador.</p></div></li>
+        </ol>
+        <div class="aviso">
+          <b>Apareceu "O Windows protegeu o computador"?</b> É normal: o jogo é independente e ainda não tem assinatura digital. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>.
+        </div>
+      </div>
+      <aside class="ficha" aria-label="Ficha do jogo">
+        <h3>Ficha</h3>
+        <dl>
+          <dt>Versão</dt><dd data-info="versao">0.10.0</dd>
+          <dt>Sistema</dt><dd>Windows 10 ou 11, 64 bits</dd>
+          <dt>Tamanho</dt><dd data-info="tamanho">91 MB (instalador)</dd>
+          <dt>Preço</dt><dd>Grátis</dd>
+          <dt>Idioma</dt><dd>Português</dd>
+          <dt>Criado por</dt><dd>iamT</dd>
+        </dl>
+        <p class="outra">Não quer instalar? Baixe a <a data-baixar="portatil" href="#">versão portátil</a> (<span data-info="portatil">.zip, 103 MB</span>): extraia e abra o <b>iamT Guild.exe</b>. Para desinstalar a versão instalada: Configurações do Windows → Aplicativos → iamT Guild.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="faixa">
+      <h2 class="secao-titulo">A Guilda está contratando</h2>
+      <p class="chamada" style="text-shadow:none">Valenport precisa de quem ainda tem coragem.</p>
+      <div class="baixar">
+        <a class="botao" data-baixar="instalador" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.2 4.5v7H3zm0 13 7.2 1v-6.9H3zm8.1 1.1L21 21v-8.4h-9.9zm0-15.2v7.1H21V3z"/></svg>
+          <span>Baixar para Windows<small data-info="instalador">Instalador · grátis</small></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="faixa">iamT Guild · feito por <a href="/">iamT</a></div>
+</footer>
+
+<script>
+/* ===== ONDE TROCAR OS LINKS A CADA VERSÃO NOVA =====
+   Os arquivos ficam nos "Releases" do GitHub (aceita arquivos grandes).
+   Ao lançar uma versão nova: mude VERSAO e, se precisar, os tamanhos. */
+var VERSAO = "0.10.0";
+var BASE = "https://github.com/iamtgames/iamtgames.github.io/releases/download/iamtguild-" + VERSAO + "/";
+var DOWNLOADS = {
+  instalador: { arquivo: "iamT-Guild-Instalador-" + VERSAO + ".exe", texto: "Instalador · 91 MB · grátis" },
+  portatil:   { arquivo: "iamT-Guild-Portatil-" + VERSAO + ".zip",   texto: ".zip, 103 MB" }
+};
+document.querySelectorAll("[data-baixar]").forEach(function (a) {
+  var d = DOWNLOADS[a.getAttribute("data-baixar")];
+  if (d) a.href = BASE + d.arquivo;
+});
+document.querySelectorAll("[data-info]").forEach(function (el) {
+  var k = el.getAttribute("data-info");
+  if (k === "versao") el.textContent = VERSAO;
+  else if (DOWNLOADS[k]) el.textContent = DOWNLOADS[k].texto;
+});
+</script>
+</body>
+</html>
