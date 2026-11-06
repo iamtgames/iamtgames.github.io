@@ -195,7 +195,7 @@ footer a { color: var(--apagado) }
           <dt>Idioma</dt><dd>Português</dd>
           <dt>Criado por</dt><dd>iamT</dd>
         </dl>
-        <p class="outra">Não quer instalar? Baixe a <a data-baixar="portatil" href="#">versão portátil</a> (<span data-info="portatil">.zip, 111 MB</span>): extraia e abra o <b>iamT Guild.exe</b>. Para desinstalar a versão instalada: Configurações do Windows → Aplicativos → iamT Guild.</p>
+        <p class="outra">Não quer instalar? Baixe a <a data-baixar="portatil" href="#">versão portátil</a> (<span data-info="portatil">.zip, 116 MB</span>): extraia e abra o <b>iamT Guild.exe</b>. Para desinstalar a versão instalada: Configurações do Windows → Aplicativos → iamT Guild.</p>
       </aside>
     </div>
   </section>
@@ -222,11 +222,11 @@ footer a { color: var(--apagado) }
 /* ===== ONDE TROCAR OS LINKS A CADA VERSÃO NOVA =====
    Os arquivos ficam nos "Releases" do GitHub (aceita arquivos grandes).
    Ao lançar uma versão nova: mude VERSAO e, se precisar, os tamanhos. */
-var VERSAO = "0.15.0";
+var VERSAO = "0.15.1";
 var BASE = "https://github.com/iamtgames/iamtgames.github.io/releases/download/iamtguild-" + VERSAO + "/";
 var DOWNLOADS = {
-  instalador: { arquivo: "iamT-Guild-Instalador-" + VERSAO + ".exe", texto: "Instalador · 99 MB · grátis" },
-  portatil:   { arquivo: "iamT-Guild-Portatil-" + VERSAO + ".zip",   texto: ".zip, 111 MB" }
+  instalador: { arquivo: "iamT-Guild-Instalador-" + VERSAO + ".exe", texto: "Instalador · 104 MB · grátis" },
+  portatil:   { arquivo: "iamT-Guild-Portatil-" + VERSAO + ".zip",   texto: ".zip, 116 MB" }
 };
 document.querySelectorAll("[data-baixar]").forEach(function (a) {
   var d = DOWNLOADS[a.getAttribute("data-baixar")];
