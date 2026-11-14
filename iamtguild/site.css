@@ -142,18 +142,6 @@ h1, h2, h3 { margin: 0; font-family: var(--titulo); font-weight: 700; letter-spa
 .zoom .ant { left: 1rem; right: auto }
 
 /* ---------- novidades ---------- */
-.versoes { margin-top: clamp(2rem, 4vw, 3rem); display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px }
-.versao { background: var(--pedra); padding: clamp(1.3rem, 2.4vw, 2rem) }
-.versao:first-child { grid-column: 1 / -1; background: var(--pedra-2) }
-.versao .tag { display: inline-block; background: var(--carmesim); color: #fff; padding: .15rem .6rem; font: 700 .9rem var(--titulo) }
-.versao .data { margin-left: .8rem; color: var(--apagado); font-size: .98rem }
-.versao .meta { margin-top: .7rem }
-.versao h3 { margin-top: 0; font-size: clamp(1.3rem, 2.2vw, 1.8rem); line-height: 1.15 }
-.versao ul { margin: 1rem 0 0; padding-left: 1.15rem; display: grid; gap: .5rem; color: var(--apagado) }
-.versao li::marker { color: var(--carmesim-claro) }
-.versao:first-child ul { columns: 2; column-gap: 2.5rem; display: block }
-.versao:first-child li { break-inside: avoid; margin-bottom: .55rem }
-.todas { margin-top: 1.6rem }
 
 /* ---------- instalar ---------- */
 .instalar { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(2rem, 4vw, 4rem); align-items: start }
@@ -213,9 +201,7 @@ footer a:hover { color: var(--ouro) }
   .bloco .texto, .instalar .ficha { margin-top: 1.6rem }
   .abas { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px }
   .aba { flex: 0 0 11.5rem; scroll-snap-align: start; align-content: start }
-  .versoes, .perguntas { grid-template-columns: 1fr }
-  .versao:first-child ul { columns: 1 }
-  .classes { grid-template-columns: 1fr }
+  .perguntas, .classes { grid-template-columns: 1fr }
   .galeria { grid-template-columns: repeat(2, 1fr) }
   .galeria button, .galeria button.larga { grid-column: span 1 }
   .galeria button.enorme { grid-column: span 2 }

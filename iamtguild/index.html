@@ -28,7 +28,6 @@
     <nav aria-label="Principal">
       <a href="#gameplay">Gameplay</a>
       <a href="#jogo">O jogo</a>
-      <a href="#novidades">Novidades</a>
       <a href="wiki/">Wiki</a>
       <a class="botao menor" data-baixar="instalador" href="#instalar">Baixar</a>
     </nav>
@@ -172,47 +171,6 @@
         <button class="revela" data-grande="img/g-mapa.webp"><img src="img/g-mapa-p.webp" width="1280" height="720" alt="O mapa antigo de Valenport, desenhado em pergaminho" loading="lazy"><span class="nome">O mapa de Valenport</span></button>
         <button class="revela" data-grande="img/g-rubra.webp"><img src="img/g-rubra-p.webp" width="1280" height="720" alt="O herói e dois aliados na Fenda Rubra" loading="lazy"><span class="nome">Fenda Rubra com aliados</span></button>
       </div>
-    </div>
-  </section>
-
-  <section class="secao" id="novidades" aria-labelledby="t-novidades">
-    <div class="miolo">
-      <h2 class="titulo-grande revela" id="t-novidades">O jogo cresce toda semana</h2>
-      <p class="intro revela">As últimas atualizações. O launcher do jogo baixa cada uma sozinho.</p>
-      <div class="versoes" id="versoes">
-        <article class="versao revela">
-          <h3>Chat e pet na caminha</h3>
-          <p class="meta"><span class="tag">0.24.0</span><span class="data">14 de novembro</span></p>
-          <ul>
-            <li>Chat no canto de baixo à direita: aperte T, escreva e Enter.</li>
-            <li>Aba Global (todo mundo) e aba Amigos (conversa só com um amigo).</li>
-            <li>Com o chat fechado, as mensagens novas aparecem no canto e somem sozinhas.</li>
-            <li>Enquanto você escreve, o herói fica parado. Clique no nome de alguém para silenciar.</li>
-            <li>O pet agora dorme em cima da caminha, e não por baixo dela.</li>
-          </ul>
-        </article>
-        <article class="versao revela">
-          <h3>O Monumento da Fenda</h3>
-          <p class="meta"><span class="tag">0.23.0</span><span class="data">14 de novembro</span></p>
-          <ul>
-            <li>O Portão virou o Astrolábio da Fenda: anéis de latão girando em volta de um cristal.</li>
-            <li>O cristal mostra a Fenda do dia: verde, dourado em dia de evento, vermelho e rachado na Fenda Rubra.</li>
-            <li>Cada chefe vencido acende uma das 14 runas dos pilares, para sempre.</li>
-            <li>Ao entrar na Fenda, as runas acendem em cascata e o herói é puxado para o portal.</li>
-          </ul>
-        </article>
-        <article class="versao revela">
-          <h3>Casa nova</h3>
-          <p class="meta"><span class="tag">0.22.0</span><span class="data">13 de novembro</span></p>
-          <ul>
-            <li>Planta com corredor: quarto e cozinha em cima, sala e sala de troféus embaixo, jardim do lado.</li>
-            <li>Decorar cada cômodo, com paredes e pisos para comprar.</li>
-            <li>Mais de 80 peças novas e 4 conjuntos temáticos com bônus.</li>
-            <li>Manequim de armadura, pet em casa e visitas que comentam a decoração.</li>
-          </ul>
-        </article>
-      </div>
-      <p class="todas"><a href="https://github.com/iamtgames/iamtgames.github.io/releases">Ver todas as versões</a></p>
     </div>
   </section>
 
@@ -419,26 +377,6 @@ var ARQUIVOS = {
   function mb(bytes) { return Math.round(bytes / 1048576) + " MB"; }
   var meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
   function limpar(t) { return t.replace(/\*\*/g, "").replace(/`/g, "").trim(); }
-  function desenharVersoes(lista) {
-    var alvo = $("#versoes"), novos = [];
-    lista.slice(0, 5).forEach(function (r, n) {
-      var linhas = (r.body || "").split(/\r?\n/).map(limpar).filter(Boolean);
-      var titulo = (linhas.shift() || "").replace(/\s*\([\d.]+\)\s*:?\s*$/, "").replace(/:$/, "");
-      var itens = linhas.filter(function (l) { return /^[-*]\s/.test(l); }).map(function (l) { return l.replace(/^[-*]\s+/, ""); });
-      if (!titulo || !itens.length) return;
-      var d = new Date(r.published_at);
-      var art = document.createElement("article"); art.className = "versao revela visivel";
-      var tag = document.createElement("span"); tag.className = "tag"; tag.textContent = r.tag_name.replace("iamtguild-", "");
-      var dt = document.createElement("span"); dt.className = "data"; dt.textContent = d.getDate() + " de " + meses[d.getMonth()];
-      var h = document.createElement("h3"); h.textContent = titulo;
-      var ul = document.createElement("ul");
-      itens.slice(0, n === 0 ? 6 : 4).forEach(function (t) { var li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
-      var meta = document.createElement("p"); meta.className = "meta"; meta.appendChild(tag); meta.appendChild(dt);
-      art.appendChild(h); art.appendChild(meta); art.appendChild(ul);
-      novos.push(art);
-    });
-    if (novos.length >= 2) { alvo.textContent = ""; novos.forEach(function (a) { alvo.appendChild(a); }); }
-  }
   function aplicar(lista) {
     var releases = lista.filter(function (r) { return /^iamtguild-/.test(r.tag_name) && !r.draft; });
     var minha = releases.filter(function (r) { return r.tag_name === "iamtguild-" + VERSAO; })[0];
@@ -453,7 +391,6 @@ var ARQUIVOS = {
         }
       });
     }
-    desenharVersoes(releases);
   }
   try {
     var guardado = sessionStorage.getItem("iamt-releases");
