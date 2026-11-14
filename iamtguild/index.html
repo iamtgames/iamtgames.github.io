@@ -54,6 +54,7 @@
         <a class="descer" href="#gameplay">Ver o jogo em ação</a>
       </div>
     </div>
+    <button class="pausa" id="pausa-abertura" type="button" aria-pressed="false" hidden>Pausar vídeo</button>
   </section>
 
   <div class="numeros">
@@ -341,9 +342,19 @@ var ARQUIVOS = {
 
   /* vídeo da abertura: só toca quando aparece na tela */
   var abertura = $("#video-abertura");
-  if (abertura && !calmo && !poucoDado) {
+  if (abertura && !poucoDado) {
     var tocaAbertura = function () { var p = abertura.play(); if (p && p.catch) p.catch(function () {}); };
-    new IntersectionObserver(function (i) { if (i[0].isIntersecting) tocaAbertura(); else abertura.pause(); }, { threshold: 0.1 }).observe(abertura);
+    new IntersectionObserver(function (i) { if (i[0].isIntersecting) { if (!pausado) tocaAbertura(); } else abertura.pause(); }, { threshold: 0.1 }).observe(abertura);
+    var pausa = $("#pausa-abertura"), pausado = false;
+    if (pausa) {
+      pausa.hidden = false;
+      pausa.addEventListener("click", function () {
+        pausado = !pausado;
+        if (pausado) abertura.pause(); else tocaAbertura();
+        pausa.textContent = pausado ? "Reproduzir vídeo" : "Pausar vídeo";
+        pausa.setAttribute("aria-pressed", String(pausado));
+      });
+    }
     abertura.addEventListener("playing", function () { var po = $(".abertura .poster"); if (po) po.style.visibility = "hidden"; });
   }
 
@@ -374,11 +385,12 @@ var ARQUIVOS = {
     if (palco.duration) abas[atual].style.setProperty("--p", (palco.currentTime / palco.duration * 100) + "%");
   });
   palco.addEventListener("ended", function () { mostrar((atual + 1) % abas.length, true); });
-  if (!calmo && !poucoDado) {
+  if (!poucoDado) {
     new IntersectionObserver(function (i) {
       if (i[0].isIntersecting) { var p = palco.play(); if (p && p.catch) p.catch(function () {}); } else palco.pause();
     }, { threshold: 0.45 }).observe(palco);
-  } else { palco.controls = true; }
+  }
+  if (calmo || poucoDado) palco.controls = true;
 
   /* galeria em tamanho grande */
   var botoes = $$("#galeria button"), zoom = $("#zoom"), zimg = $("#zoom-img"), zleg = $("#zoom-legenda"), pos = 0, voltarPara = null;

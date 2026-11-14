@@ -235,3 +235,7 @@ footer a:hover { color: var(--ouro) }
   .js .revela { opacity: 1; transform: none; transition: none }
   .botao, .bloco .foto img, .galeria img { transition: none }
 }
+
+.abertura .pausa { position: absolute; right: var(--margem, 1.5rem); bottom: 1.5rem; background: rgba(15,17,21,.78); color: var(--texto); border: 0; padding: .55rem 1rem; font: 600 .95rem var(--corpo, inherit); cursor: pointer }
+.abertura .pausa:hover { background: var(--pedra-2) }
+.abertura .pausa[hidden] { display: none }
