@@ -1,0 +1,3364 @@
+{
+ "url": "index.html",
+ "at": "2026-11-14T07:15:50.740Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.22,
+    0.95,
+    0.95,
+    0.54,
+    0.53,
+    0.68,
+    0.95,
+    0.95,
+    0.95,
+    0.58,
+    0.72,
+    0.84
+   ],
+   "motion": {
+    "elements": 40,
+    "css": 0,
+    "transitions": 40,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 12573,
+     "screens": 14,
+     "words": 1220,
+     "img": 21,
+     "video": 2,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 9,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 21,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "poster-abertura.webp",
+      "p-cripta.webp",
+      "p-forja.webp",
+      "p-festa.webp",
+      "p-feira.webp",
+      "p-monumento.webp",
+      "bloco-fenda.webp",
+      "bloco-cidade.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Desça na Fenda. Volte para casa.",
+     "words": 6,
+     "chars": 32,
+     "lines": 2,
+     "size": 109.4,
+     "vw": 7.6,
+     "font": "Cinzel",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.69,
+     "top": 386,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Desça na Fenda. Volte para casa.",
+     "words": 6,
+     "lines": 2,
+     "size": 109.4,
+     "font": "Cinzel"
+    },
+    "headings": [
+     {
+      "text": "Desça na Fenda. Volte para casa.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 109.4,
+      "vw": 7.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 386,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "14",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 951,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "75",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 951,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "182",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.17,
+      "top": 951,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "135",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 951,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "166",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 951,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Veja o jogo de perto",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 1241,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Uma partida na Fenda. Uma vida em Valenport.",
+      "words": 8,
+      "chars": 44,
+      "lines": 2,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 2901,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Na Fenda, você sobrevive até o chefe",
+      "words": 7,
+      "chars": 36,
+      "lines": 2,
+      "size": 41.6,
+      "vw": 2.9,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 3109,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Em Valenport, a vida continua",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 41.6,
+      "vw": 2.9,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 3734,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Jogue com os amigos",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 41.6,
+      "vw": 2.9,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 4435,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Escolha a sua classe",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 5842,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Imagens do jogo",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 6346,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "O jogo cresce toda semana",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 8290,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Chat e pet na caminha",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 8557,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "O Monumento da Fenda",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 8836,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Girar móveis e construir na casa toda",
+      "words": 7,
+      "chars": 37,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 8836,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Casa polida e jogar junto melhor",
+      "words": 6,
+      "chars": 32,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 9271,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Casa nova",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 9271,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Baixe e jogue em três passos",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 10008,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perguntas comuns",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 65.6,
+      "vw": 4.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 11147,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A Guilda está contratando.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 100.8,
+      "vw": 7,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 11754,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "iamT Guild",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 208,
+      "vw": 14.4,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 12290,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 23,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Alegreya Sans",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Cinzel",
+       "share": 0.15,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24,
+      26,
+      29,
+      42,
+      66,
+      101,
+      109,
+      208
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "body": {
+      "font": "Alegreya Sans",
+      "size": 19.2,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.1
+     },
+     "measureChars": 71,
+     "max": {
+      "size": 208,
+      "vw": 14.4,
+      "font": "Cinzel",
+      "text": "iamT Guild"
+     },
+     "monoShare": 0.01,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0f1115",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.17,
+      "l": 0.07
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0f1115",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.17,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#151a22",
+       "top": 1097,
+       "hsl": {
+        "h": 217,
+        "s": 0.24,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#000000",
+       "top": 1440,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0
+       }
+      },
+      {
+       "color": "#0b0d11",
+       "top": 4954,
+       "hsl": {
+        "h": 220,
+        "s": 0.21,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#1b202a",
+       "top": 6516,
+       "hsl": {
+        "h": 220,
+        "s": 0.22,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#4a0714",
+       "top": 11584,
+       "hsl": {
+        "h": 348,
+        "s": 0.83,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aab4c8",
+       "share": 0.72
+      },
+      {
+       "color": "#e9dcc0",
+       "share": 0.2
+      },
+      {
+       "color": "#f3eee3",
+       "share": 0.04
+      },
+      {
+       "color": "#ffd768",
+       "share": 0.02
+      },
+      {
+       "color": "#0f1115",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffd768",
+      "hsl": {
+       "h": 44,
+       "s": 1,
+       "l": 0.7
+      },
+      "fg": "#0f1115"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 3,
+     "radius": 2,
+     "height": 55,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Ir para o download",
+      "Baixar",
+      "Baixar para Windows"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 10,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 21,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 5,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 2211
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 8804
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "video",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "alegreya sans",
+     "cinzel"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 12573,
+    "margins": {
+     "left": 44,
+     "right": 44
+    },
+    "sections": [
+     {
+      "sel": "section.abertura",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 55,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Desça na Fenda.",
+       "size": 109,
+       "tag": "h1"
+      },
+      "left": 44,
+      "right": 476,
+      "textLeft": 44,
+      "textRight": 476,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.numeros",
+      "tag": "div",
+      "top": 900,
+      "height": 197,
+      "words": 20,
+      "media": 0,
+      "middle": 164,
+      "heading": {
+       "text": "14",
+       "size": 66,
+       "tag": "strong"
+      },
+      "left": 44,
+      "right": 184,
+      "textLeft": 44,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#gameplay.secao.clara",
+      "tag": "section",
+      "top": 1097,
+      "height": 1660,
+      "words": 54,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Veja o jogo de perto",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 44,
+      "right": 44,
+      "textLeft": 44,
+      "textRight": 88,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#jogo.secao",
+      "tag": "section",
+      "top": 2757,
+      "height": 2197,
+      "words": 271,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Uma partida na Fenda. Uma vida em Valenport.",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 44,
+      "right": 44,
+      "textLeft": 44,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.herois",
+      "tag": "section",
+      "top": 4954,
+      "height": 1248,
+      "words": 47,
+      "media": 1,
+      "middle": 99,
+      "heading": null,
+      "left": 44,
+      "right": 181,
+      "textLeft": 44,
+      "textRight": 181,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#prints.secao.clara",
+      "tag": "section",
+      "top": 6202,
+      "height": 1944,
+      "words": 13,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Imagens do jogo",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 44,
+      "right": 44,
+      "textLeft": 44,
+      "textRight": 817,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#novidades.secao",
+      "tag": "section",
+      "top": 8146,
+      "height": 1718,
+      "words": 420,
+      "media": 0,
+      "middle": 29,
+      "heading": {
+       "text": "O jogo cresce toda semana",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 44,
+      "right": 79,
+      "textLeft": 44,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#instalar.secao.clara",
+      "tag": "section",
+      "top": 9864,
+      "height": 1113,
+      "words": 210,
+      "media": 0,
+      "middle": 232,
+      "heading": {
+       "text": "Baixe e jogue em três passos",
+       "size": 66,
+       "tag": "h2"
+      },
+      "left": 44,
+      "right": 98,
+      "textLeft": 44,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.secao",
+      "tag": "section",
+      "top": 10977,
+      "height": 607,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.fecho",
+      "tag": "section",
+      "top": 11584,
+      "height": 658,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 12242,
+      "height": 331,
+      "words": 14,
+      "media": 0,
+      "middle": 9,
+      "heading": {
+       "text": "iamT Guild",
+       "size": 208,
+       "tag": "div"
+      },
+      "left": 44,
+      "right": 44,
+      "textLeft": 44,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 2616,
+      "height": 272
+     },
+     {
+      "top": 8004,
+      "height": 276
+     },
+     {
+      "top": 9716,
+      "height": 280
+     },
+     {
+      "top": 10744,
+      "height": 1496
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Desça na Fenda. Volte para casa.",
+      "size": 109,
+      "top": 386,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 44,
+      "n": 15
+     },
+     {
+      "x": 72,
+      "n": 6
+     },
+     {
+      "x": 858,
+      "n": 5
+     },
+     {
+      "x": 757,
+      "n": 2
+     },
+     {
+      "x": 901,
+      "n": 2
+     },
+     {
+      "x": 509,
+      "n": 1
+     },
+     {
+      "x": 917,
+      "n": 1
+     },
+     {
+      "x": 973,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 33,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.17,
+    0.97,
+    0.8,
+    0.59,
+    0.63,
+    0.97,
+    0.97,
+    0.81,
+    0.91,
+    0.71,
+    0.97,
+    0.82
+   ],
+   "motion": {
+    "elements": 49,
+    "css": 0,
+    "transitions": 49,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 12744,
+     "screens": 12.4,
+     "words": 1220,
+     "img": 21,
+     "video": 2,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 9,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 21,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "poster-abertura.webp",
+      "p-cripta.webp",
+      "p-forja.webp",
+      "p-festa.webp",
+      "p-feira.webp",
+      "p-monumento.webp",
+      "bloco-fenda.webp",
+      "bloco-cidade.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Desça na Fenda. Volte para casa.",
+     "words": 6,
+     "chars": 32,
+     "lines": 2,
+     "size": 58.4,
+     "vw": 7.6,
+     "font": "Cinzel",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.69,
+     "top": 634,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Desça na Fenda. Volte para casa.",
+     "words": 6,
+     "lines": 2,
+     "size": 58.4,
+     "font": "Cinzel"
+    },
+    "headings": [
+     {
+      "text": "Desça na Fenda. Volte para casa.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 58.4,
+      "vw": 7.6,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 634,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "14",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1056,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "75",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.29,
+      "top": 1056,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "182",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.29,
+      "top": 1056,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "135",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1148,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "166",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.29,
+      "top": 1148,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Veja o jogo de perto",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 36.9,
+      "vw": 4.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 1332,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Uma partida na Fenda. Uma vida em Valenport.",
+      "words": 8,
+      "chars": 44,
+      "lines": 2,
+      "size": 36.9,
+      "vw": 4.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 2492,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Na Fenda, você sobrevive até o chefe",
+      "words": 7,
+      "chars": 36,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 3.5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3083,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Em Valenport, a vida continua",
+      "words": 5,
+      "chars": 29,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 3.5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3993,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Jogue com os amigos",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 3.5,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 4873,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Escolha a sua classe",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 36.9,
+      "vw": 4.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 5703,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Imagens do jogo",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 36.9,
+      "vw": 4.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 6285,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "O jogo cresce toda semana",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 36.9,
+      "vw": 4.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 7720,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Baixe e jogue em três passos",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 36.9,
+      "vw": 4.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 9876,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perguntas comuns",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36.9,
+      "vw": 4.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 11480,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A Guilda está contratando.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 53.8,
+      "vw": 7,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 12134,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "iamT Guild",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 15,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 12544,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Alegreya Sans",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Cinzel",
+       "share": 0.15,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      24,
+      27,
+      37,
+      38,
+      54,
+      58,
+      115
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Alegreya Sans",
+      "size": 19.1,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 9.1
+     },
+     "measureChars": 80,
+     "max": {
+      "size": 115.2,
+      "vw": 15,
+      "font": "Cinzel",
+      "text": "iamT Guild"
+     },
+     "monoShare": 0.01,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Baixar para Windows",
+      "above": "iamT Guild",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17.9,
+      "top": 12382
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0f1115",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.17,
+      "l": 0.07
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0f1115",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.17,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#151a22",
+       "top": 1247,
+       "hsl": {
+        "h": 217,
+        "s": 0.24,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#000000",
+       "top": 1482,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0
+       }
+      },
+      {
+       "color": "#1b202a",
+       "top": 2609,
+       "hsl": {
+        "h": 220,
+        "s": 0.22,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#0b0d11",
+       "top": 5210,
+       "hsl": {
+        "h": 220,
+        "s": 0.21,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#4a0714",
+       "top": 12049,
+       "hsl": {
+        "h": 348,
+        "s": 0.83,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aab4c8",
+       "share": 0.72
+      },
+      {
+       "color": "#e9dcc0",
+       "share": 0.2
+      },
+      {
+       "color": "#f3eee3",
+       "share": 0.04
+      },
+      {
+       "color": "#ffd768",
+       "share": 0.02
+      },
+      {
+       "color": "#0f1115",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffd768",
+      "hsl": {
+       "h": 44,
+       "s": 1,
+       "l": 0.7
+      },
+      "fg": "#0f1115"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 3,
+     "radius": 2,
+     "height": 55,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Ir para o download",
+      "Baixar",
+      "Baixar para Windows"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 10,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 16,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 5,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1896
+      },
+      {
+       "count": 7,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 6723
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "video",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "alegreya sans",
+     "cinzel"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 12744,
+    "margins": {
+     "left": 25,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "section.abertura",
+      "tag": "section",
+      "top": 0,
+      "height": 1024,
+      "words": 55,
+      "media": 2,
+      "middle": 0,
+      "heading": null,
+      "left": 25,
+      "right": 122,
+      "textLeft": 25,
+      "textRight": 122,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.numeros",
+      "tag": "div",
+      "top": 1024,
+      "height": 223,
+      "words": 20,
+      "media": 0,
+      "middle": 137,
+      "heading": {
+       "text": "14",
+       "size": 38,
+       "tag": "strong"
+      },
+      "left": 25,
+      "right": 130,
+      "textLeft": 25,
+      "textRight": 130,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#gameplay.secao.clara",
+      "tag": "section",
+      "top": 1247,
+      "height": 1160,
+      "words": 54,
+      "media": 6,
+      "middle": 46,
+      "heading": {
+       "text": "Veja o jogo de perto",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 0,
+      "textLeft": 25,
+      "textRight": -195,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#jogo.secao",
+      "tag": "section",
+      "top": 2407,
+      "height": 2802,
+      "words": 271,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Uma partida na Fenda. Uma vida em Valenport.",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 25,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.herois",
+      "tag": "section",
+      "top": 5210,
+      "height": 990,
+      "words": 47,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Escolha a sua classe",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 127,
+      "textLeft": 25,
+      "textRight": 127,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#prints.secao.clara",
+      "tag": "section",
+      "top": 6200,
+      "height": 1435,
+      "words": 13,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Imagens do jogo",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 25,
+      "textRight": 329,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#novidades.secao",
+      "tag": "section",
+      "top": 7635,
+      "height": 2156,
+      "words": 420,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "O jogo cresce toda semana",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 50,
+      "textLeft": 25,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#instalar.secao.clara",
+      "tag": "section",
+      "top": 9792,
+      "height": 1604,
+      "words": 234,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Baixe e jogue em três passos",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 46,
+      "textLeft": 25,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.secao",
+      "tag": "section",
+      "top": 11395,
+      "height": 654,
+      "words": 113,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Perguntas comuns",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 58,
+      "textLeft": 25,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.fecho",
+      "tag": "section",
+      "top": 12049,
+      "height": 447,
+      "words": 4,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A Guilda está contratando.",
+       "size": 54,
+       "tag": "h2"
+      },
+      "left": 25,
+      "right": 340,
+      "textLeft": 25,
+      "textRight": 340,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 12496,
+      "height": 248,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "iamT Guild",
+       "size": 115,
+       "tag": "div"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 25,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Desça na Fenda. Volte para casa.",
+      "size": 58,
+      "top": 634,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 25,
+      "n": 24
+     },
+     {
+      "x": 45,
+      "n": 15
+     },
+     {
+      "x": 63,
+      "n": 1
+     },
+     {
+      "x": 144,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 41,
+    "bodySize": 19,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.26,
+    0.98,
+    0.79,
+    0.52,
+    0.61,
+    0.58,
+    0.97,
+    0.96,
+    0.96,
+    0.66,
+    0.89,
+    0.89
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 0,
+    "transitions": 34,
+    "scripted": 0,
+    "videos": 2,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 13691,
+     "screens": 16.2,
+     "words": 1197,
+     "img": 21,
+     "video": 2,
+     "canvas": 0,
+     "svg": 3,
+     "sections": 9,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 21,
+     "videoCount": 2,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "poster-abertura.webp",
+      "p-cripta.webp",
+      "p-forja.webp",
+      "p-festa.webp",
+      "p-feira.webp",
+      "p-monumento.webp",
+      "bloco-fenda.webp",
+      "bloco-cidade.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Desça na Fenda. Volte para casa.",
+     "words": 6,
+     "chars": 32,
+     "lines": 2,
+     "size": 34.4,
+     "vw": 8.8,
+     "font": "Cinzel",
+     "weight": 700,
+     "tracking": -0.025,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.81,
+     "top": 407,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Desça na Fenda. Volte para casa.",
+     "words": 6,
+     "lines": 2,
+     "size": 34.4,
+     "font": "Cinzel"
+    },
+    "headings": [
+     {
+      "text": "Desça na Fenda. Volte para casa.",
+      "words": 6,
+      "chars": 32,
+      "lines": 2,
+      "size": 34.4,
+      "vw": 8.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 407,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "14",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 876,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "75",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 876,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "182",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 995,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "135",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 995,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "166",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 1088,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Veja o jogo de perto",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 1259,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Uma partida na Fenda. Uma vida em Valenport.",
+      "words": 8,
+      "chars": 44,
+      "lines": 3,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2279,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Na Fenda, você sobrevive até o chefe",
+      "words": 7,
+      "chars": 36,
+      "lines": 2,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2666,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Em Valenport, a vida continua",
+      "words": 5,
+      "chars": 29,
+      "lines": 2,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 3522,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Jogue com os amigos",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 4321,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Escolha a sua classe",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5021,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Guerreiro",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5093,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Mago",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5184,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Arqueiro",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5275,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Imagens do jogo",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 5588,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "O jogo cresce toda semana",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 7749,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Baixe e jogue em três passos",
+      "words": 6,
+      "chars": 28,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 10556,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "iamT Guild",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 11570,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Perguntas comuns",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 12495,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A Guilda está contratando.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.025,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 13163,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "iamT Guild",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Cinzel",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 13504,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 22,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Alegreya Sans",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Cinzel",
+       "share": 0.15,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      24,
+      27,
+      32,
+      34,
+      38,
+      59
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Alegreya Sans",
+      "size": 17.9,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.9
+     },
+     "measureChars": 36,
+     "max": {
+      "size": 58.5,
+      "vw": 15,
+      "font": "Cinzel",
+      "text": "iamT Guild"
+     },
+     "monoShare": 0.01,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0f1115",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.17,
+      "l": 0.07
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0f1115",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.17,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#4a0714",
+       "top": 844,
+       "hsl": {
+        "h": 348,
+        "s": 0.83,
+        "l": 0.16
+       }
+      },
+      {
+       "color": "#151a22",
+       "top": 1187,
+       "hsl": {
+        "h": 217,
+        "s": 0.24,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#0b0d11",
+       "top": 4746,
+       "hsl": {
+        "h": 220,
+        "s": 0.21,
+        "l": 0.05
+       }
+      },
+      {
+       "color": "#262d39",
+       "top": 7927,
+       "hsl": {
+        "h": 218,
+        "s": 0.2,
+        "l": 0.19
+       }
+      },
+      {
+       "color": "#1b202a",
+       "top": 8383,
+       "hsl": {
+        "h": 220,
+        "s": 0.22,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#aab4c8",
+       "share": 0.73
+      },
+      {
+       "color": "#e9dcc0",
+       "share": 0.19
+      },
+      {
+       "color": "#f3eee3",
+       "share": 0.04
+      },
+      {
+       "color": "#ffd768",
+       "share": 0.02
+      },
+      {
+       "color": "#0f1115",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffd768",
+      "hsl": {
+       "h": 44,
+       "s": 1,
+       "l": 0.7
+      },
+      "fg": "#0f1115"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 3,
+     "radius": 2,
+     "height": 55,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Ir para o download",
+      "Baixar",
+      "Baixar para Windows"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 10,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 16,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 5,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 1709
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "video",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "alegreya sans",
+     "cinzel"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 13691,
+    "margins": {
+     "left": 18,
+     "right": 18
+    },
+    "sections": [
+     {
+      "sel": "section.abertura",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 55,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Desça na Fenda.",
+       "size": 34,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 35,
+      "textLeft": 18,
+      "textRight": 35,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.numeros",
+      "tag": "div",
+      "top": 844,
+      "height": 343,
+      "words": 20,
+      "media": 0,
+      "middle": 47,
+      "heading": {
+       "text": "14",
+       "size": 38,
+       "tag": "strong"
+      },
+      "left": 18,
+      "right": 71,
+      "textLeft": 18,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#gameplay.secao.clara",
+      "tag": "section",
+      "top": 1187,
+      "height": 1021,
+      "words": 38,
+      "media": 6,
+      "middle": 418,
+      "heading": {
+       "text": "Veja o jogo de perto",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 0,
+      "textLeft": 18,
+      "textRight": -567,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#jogo.secao",
+      "tag": "section",
+      "top": 2207,
+      "height": 2538,
+      "words": 271,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Uma partida na Fenda. Uma vida em Valenport.",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.herois",
+      "tag": "section",
+      "top": 4746,
+      "height": 770,
+      "words": 47,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Escolha a sua classe",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 24,
+      "textLeft": 18,
+      "textRight": 24,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#prints.secao.clara",
+      "tag": "section",
+      "top": 5516,
+      "height": 2161,
+      "words": 13,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Imagens do jogo",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#novidades.secao",
+      "tag": "section",
+      "top": 7677,
+      "height": 2781,
+      "words": 420,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "O jogo cresce toda semana",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 18,
+      "right": 23,
+      "textLeft": 18,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#instalar.secao.clara",
+      "tag": "section",
+      "top": 10458,
+      "height": 1940,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.secao",
+      "tag": "section",
+      "top": 12397,
+      "height": 667,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.fecho",
+      "tag": "section",
+      "top": 13065,
+      "height": 392,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 13456,
+      "height": 235,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "iamT Guild",
+       "size": 59,
+       "tag": "div"
+      },
+      "left": 18,
+      "right": 43,
+      "textLeft": 18,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 10384,
+      "height": 3104
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Desça na Fenda. Volte para casa.",
+      "size": 34,
+      "top": 407,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 18,
+      "n": 21
+     },
+     {
+      "x": 39,
+      "n": 5
+     }
+    ],
+    "leftBlocks": 26,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (text #f3eee3).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "15 different font sizes (14, 15, 16, 17, 18, 19, 20, 24, 26, 29, 42, 66, 101, 109, 208).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 1440,
+   "message": "1 stretch(es) of the page hold nothing at all: 1496px at 10744px (the screen is 900px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 768,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Baixar para Windows\" above \"iamT Guild\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 768,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Uma partida na Fenda. Uma vida em Valenport.\" → 3 lines (8 words, 32px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/desktop-page-01.jpg",
+    "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/desktop-page-02.jpg",
+    "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/tablet-page-01.jpg",
+    "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/mobile-page-01.jpg",
+    "/home/claude/iamtgames.github.io/iamtguild/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

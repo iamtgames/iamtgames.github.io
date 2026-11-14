@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>iamT Guild · Baixar o jogo</title>
-<meta name="description" content="iamT Guild: desça na Fenda, enfrente hordas de criaturas e volte para cuidar da sua casa em Valenport. Baixe grátis para Windows.">
-<meta property="og:title" content="iamT Guild — baixe grátis para Windows">
-<meta property="og:description" content="Desça na Fenda, enfrente hordas e volte para cuidar da sua casa em Valenport. Plante, construa e sobreviva.">
+<title>iamT Guild · Baixe grátis para Windows</title>
+<meta name="description" content="iamT Guild: um jogo de ação e de vila. Enfrente hordas em 14 masmorras, volte para Valenport e cuide da sua casa, da horta e dos seus amigos. Grátis para Windows.">
+<meta name="theme-color" content="#0f1115">
+<meta property="og:title" content="iamT Guild: desça na Fenda, volte para casa">
+<meta property="og:description" content="Ação em hordas e vida em vila num jogo só. 14 masmorras, uma cidade com moradores de verdade e amigos para visitar. Grátis para Windows.">
 <meta property="og:image" content="https://www.iamt.com.br/iamtguild/img/compartilhar.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -14,229 +15,448 @@
 <link rel="apple-touch-icon" href="img/icone.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
-<style>
-/* Página de download do iamT Guild — escura como o jogo: pedra, ouro velho e o vermelho da Fenda. */
-:root {
-  --noite: #0d0a0c;
-  --pedra: #17121a;
-  --pedra-2: #211a24;
-  --linha: #3a2c33;
-  --texto: #ece3d2;
-  --apagado: #a99b8a;
-  --ouro: #d9a441;
-  --ouro-claro: #f3cf7a;
-  --fenda: #c8323c;
-  --fenda-escura: #7a1520;
-  --titulo: "Cinzel", Georgia, serif;
-  --corpo: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
-  color-scheme: dark;
-}
-* { box-sizing: border-box }
-html { scroll-behavior: smooth }
-body { margin: 0; background: var(--noite); color: var(--texto); font: 400 1.0625rem/1.6 var(--corpo); -webkit-font-smoothing: antialiased }
-img { max-width: 100%; display: block }
-a { color: var(--ouro-claro) }
-:focus-visible { outline: 2px solid var(--ouro-claro); outline-offset: 3px }
-h1, h2, h3 { font-family: var(--titulo); font-weight: 800; line-height: 1.15; margin: 0; letter-spacing: .02em }
-p { margin: 0 }
-.faixa { max-width: 70rem; margin-inline: auto; padding-inline: 20px }
-
-/* Topo */
-.topo { position: absolute; inset: 0 0 auto; z-index: 2 }
-.topo .faixa { display: flex; justify-content: space-between; align-items: center; padding-block: 1rem; font-size: .9rem }
-.topo a { color: var(--apagado); text-decoration: none }
-.topo a:hover { color: var(--texto) }
-
-/* Abertura */
-.abertura { position: relative; min-height: min(92vh, 52rem); display: grid; place-items: center; text-align: center; overflow: hidden; isolation: isolate; padding: 6rem 0 4rem }
-.abertura::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("img/fundo.webp") center / cover no-repeat; filter: saturate(1.1) }
-.abertura::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 50% 40%, rgba(13,10,12,.25), rgba(13,10,12,.85) 70%), linear-gradient(to bottom, transparent 60%, var(--noite)) }
-.logo { width: min(40rem, 88vw); height: auto; margin-inline: auto; filter: drop-shadow(0 6px 30px rgba(200,50,60,.35)) }
-.chamada { margin-top: 1.25rem; font-size: clamp(1.1rem, 2.4vw, 1.35rem); color: var(--texto); max-width: 36rem; margin-inline: auto; text-shadow: 0 2px 12px #000 }
-.chamada em { color: var(--ouro-claro); font-style: normal }
-.baixar { margin-top: 2.25rem; display: grid; justify-items: center; gap: .8rem }
-.botao { display: inline-flex; align-items: center; gap: .85rem; padding: 1rem 1.75rem; border-radius: 6px; text-decoration: none; font: 800 1.15rem/1.1 var(--titulo); letter-spacing: .04em; color: #1b0f08; background: linear-gradient(to bottom, var(--ouro-claro), var(--ouro)); border: 1px solid #f7dc98; box-shadow: 0 0 0 3px rgba(217,164,65,.18), 0 10px 30px -8px rgba(217,164,65,.6); transition: transform .15s, box-shadow .15s }
-.botao:hover { transform: translateY(-2px); box-shadow: 0 0 0 4px rgba(217,164,65,.3), 0 14px 36px -8px rgba(217,164,65,.75) }
-.botao svg { width: 1.4rem; height: 1.4rem; flex: none }
-.botao small { display: block; font: 500 .85rem var(--corpo); letter-spacing: 0; margin-top: .25rem; color: #4a3015 }
-.detalhes { font-size: .92rem; color: var(--apagado) }
-.detalhes a { color: var(--apagado) }
-
-/* Seções */
-section { padding-block: clamp(3rem, 8vw, 5.5rem) }
-.rotulo { font: 600 .8rem var(--titulo); letter-spacing: .18em; text-transform: uppercase; color: var(--fenda) }
-.secao-titulo { font-size: clamp(1.7rem, 4vw, 2.4rem); margin-top: .4rem; color: var(--ouro-claro) }
-
-/* Galeria */
-.galeria { margin-top: 2rem; display: grid; gap: 14px; grid-template-columns: repeat(6, 1fr) }
-.galeria figure { margin: 0; border: 1px solid var(--linha); border-radius: 6px; overflow: hidden; background: var(--pedra); grid-column: span 3 }
-.galeria figure.grande { grid-column: span 6 }
-.galeria figure.terco { grid-column: span 2 }
-.galeria img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover }
-.galeria { align-items: start }
-.galeria figcaption { padding: .6rem .85rem; font-size: .92rem; color: var(--apagado) }
-.galeria figcaption b { color: var(--texto); font-weight: 500 }
-
-/* O que tem no jogo */
-.pilares { margin-top: 2rem; display: grid; gap: 1px; background: var(--linha); border: 1px solid var(--linha); border-radius: 6px; overflow: hidden; grid-template-columns: repeat(3, 1fr) }
-.pilar { background: var(--pedra); padding: 1.5rem 1.4rem 1.6rem }
-.pilar h3 { font-size: 1.15rem; color: var(--ouro-claro) }
-.pilar p { margin-top: .55rem; color: var(--apagado) }
-.pilar .num { font: 800 .85rem var(--titulo); color: var(--fenda); letter-spacing: .1em }
-
-/* Como instalar */
-.instalar { display: grid; gap: 2.5rem; grid-template-columns: 1fr 1fr; align-items: start }
-.passos { list-style: none; margin: 1.5rem 0 0; padding: 0; counter-reset: p; display: grid; gap: 1rem }
-.passos li { counter-increment: p; display: grid; grid-template-columns: 2.4rem 1fr; gap: .9rem; align-items: start }
-.passos li::before { content: counter(p); display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1.5px solid var(--ouro); color: var(--ouro-claro); font: 800 1rem var(--titulo) }
-.passos b { color: var(--texto) }
-.passos p { color: var(--apagado) }
-.aviso { margin-top: 1.5rem; border: 1px solid var(--linha); border-left: 3px solid var(--ouro); background: var(--pedra); padding: 1rem 1.15rem; border-radius: 4px; color: var(--apagado); font-size: .97rem }
-.aviso b { color: var(--texto) }
-.ficha { border: 1px solid var(--linha); border-radius: 6px; background: var(--pedra); padding: 1.4rem 1.4rem 1.2rem }
-.ficha h3 { font-size: 1.1rem; color: var(--ouro-claro) }
-.ficha dl { margin: 1rem 0 0; display: grid; grid-template-columns: auto 1fr; gap: .55rem 1rem; font-size: .97rem }
-.ficha dt { color: var(--apagado) }
-.ficha dd { margin: 0 }
-.ficha .outra { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--linha); font-size: .95rem; color: var(--apagado) }
-
-/* Final */
-.final { text-align: center; border-top: 1px solid var(--linha); background: radial-gradient(ellipse at 50% 0%, rgba(200,50,60,.16), transparent 65%) }
-.final .baixar { margin-top: 1.5rem }
-footer { padding: 2rem 0 3rem; text-align: center; color: var(--apagado); font-size: .9rem }
-footer a { color: var(--apagado) }
-
-@media (max-width: 760px) {
-  .galeria { grid-template-columns: 1fr }
-  .galeria figure, .galeria figure.grande, .galeria figure.terco { grid-column: auto }
-  .pilares { grid-template-columns: 1fr }
-  .instalar { grid-template-columns: 1fr }
-  .botao { padding: .9rem 1.25rem; font-size: 1.02rem }
-}
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } .botao { transition: none } }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.className += " js";</script>
 </head>
 <body>
+<a class="pular" href="#instalar">Ir para o download</a>
 
-<header class="topo">
-  <div class="faixa">
-    <a href="/">← iamT</a>
-    <a href="#instalar">Como instalar</a>
+<header class="barra" id="barra">
+  <div class="miolo">
+    <a class="marca" href="#topo" aria-label="iamT Guild, voltar ao início"><img src="img/logo.webp" width="1100" height="380" alt="iamT Guild"></a>
+    <nav aria-label="Principal">
+      <a href="#gameplay">Gameplay</a>
+      <a href="#jogo">O jogo</a>
+      <a href="#novidades">Novidades</a>
+      <a href="wiki/">Wiki</a>
+      <a class="botao menor" data-baixar="instalador" href="#instalar">Baixar</a>
+    </nav>
   </div>
 </header>
 
-<main>
-  <div class="abertura">
-    <div class="faixa">
-      <h1><img class="logo" src="img/logo.webp" width="1100" height="380" alt="iamT Guild"></h1>
-      <p class="chamada">A Fenda sangra sobre Aethelgard e cospe masmorras vivas. Desça, enfrente as hordas e volte para Valenport para cuidar da sua casa. <em>Plante, construa e sobreviva.</em></p>
-      <div class="baixar">
-        <a class="botao" data-baixar="instalador" href="#">
+<main id="topo">
+
+  <section class="abertura" aria-labelledby="titulo-principal">
+    <img class="poster" src="img/poster-abertura.webp" alt="" width="1280" height="720" fetchpriority="high">
+    <video id="video-abertura" muted loop playsinline preload="auto" poster="img/poster-abertura.webp" aria-hidden="true">
+      <source src="video/abertura.mp4" type="video/mp4">
+    </video>
+    <div class="miolo">
+      <h1 id="titulo-principal">Desça na Fenda.<br>Volte para casa.</h1>
+      <p class="chamada">iamT Guild é um jogo de ação e de vida em vila. Enfrente hordas em 14 masmorras e depois cuide da sua casa, da sua horta e dos seus amigos em Valenport.</p>
+      <div class="acao">
+        <a class="botao" data-baixar="instalador" href="#instalar">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.2 4.5v7H3zm0 13 7.2 1v-6.9H3zm8.1 1.1L21 21v-8.4h-9.9zm0-15.2v7.1H21V3z"/></svg>
-          <span>Baixar para Windows<small data-info="instalador">Instalador · grátis</small></span>
+          Baixar para Windows
         </a>
-        <p class="detalhes">Windows 10 ou 11 (64 bits) · <a href="#instalar">como instalar</a></p>
+        <p><b>Versão <span data-versao>0.24.0</span></b> · <span data-tamanho="instalador">117 MB</span> · grátis · Windows 10 e 11</p>
+        <a class="descer" href="#gameplay">Ver o jogo em ação</a>
       </div>
     </div>
+  </section>
+
+  <div class="numeros">
+    <ul>
+      <li class="revela"><strong>14</strong><span>masmorras, cada uma com chefe</span></li>
+      <li class="revela" style="--atraso:70ms"><strong>75</strong><span>criaturas e chefes</span></li>
+      <li class="revela" style="--atraso:140ms"><strong>182</strong><span>missões da Guilda</span></li>
+      <li class="revela" style="--atraso:210ms"><strong>135</strong><span>móveis e enfeites</span></li>
+      <li class="revela" style="--atraso:280ms"><strong>166</strong><span>conquistas</span></li>
+    </ul>
   </div>
 
-  <section>
-    <div class="faixa">
-      <p class="rotulo">Veja o jogo</p>
-      <h2 class="secao-titulo">Da Fenda até a sua casa</h2>
-      <div class="galeria">
-        <figure class="grande"><img src="img/combate.webp" width="1280" height="720" alt="O herói no meio de uma horda de criaturas, com poderes explodindo em volta" loading="lazy"><figcaption><b>A Fenda.</b> Hordas que crescem a cada minuto, poderes que se combinam e um chefe no fim.</figcaption></figure>
-        <figure><img src="img/feira.webp" width="1280" height="720" alt="Dia de feira na praça de Valenport, com barracas e moradores" loading="lazy"><figcaption><b>Valenport.</b> Moradores com rotina, feiras, festas e uma cidade que cresce com você.</figcaption></figure>
-        <figure><img src="img/casa.webp" width="1280" height="720" alt="A casa do herói ampliada, com horta e quintal" loading="lazy"><figcaption><b>A sua casa.</b> Amplie, mobilie, plante na horta e contrate ajudantes.</figcaption></figure>
-        <figure class="terco"><img src="img/neve.webp" width="1280" height="720" alt="A rua coberta de neve com um boneco de neve na praça" loading="lazy"><figcaption><b>O clima muda tudo.</b> Neve, alagamento, seca e eventos na cidade.</figcaption></figure>
-        <figure class="terco"><img src="img/fenda_rubra.webp" width="1280" height="720" alt="O herói e dois aliados cercados na Fenda Rubra" loading="lazy"><figcaption><b>Fenda Rubra.</b> Leve aliados e aguente o quanto puder.</figcaption></figure>
-        <figure class="terco"><img src="img/missoes.webp" width="1280" height="720" alt="O Quadro de missões da Guilda com uma missão de contato" loading="lazy"><figcaption><b>Missões da Guilda.</b> Contratos, contatos na cidade e o rank que sobe.</figcaption></figure>
+  <section class="secao clara" id="gameplay" aria-labelledby="t-gameplay">
+    <div class="miolo">
+      <h2 class="titulo-grande revela" id="t-gameplay">Veja o jogo de perto</h2>
+      <p class="intro revela">Estes vídeos foram gravados dentro do próprio jogo, sem edição. É assim que ele se move de verdade.</p>
+      <div class="palco revela">
+        <video id="video-palco" muted playsinline preload="metadata" poster="img/p-cripta.webp">
+          <source src="video/cripta.mp4" type="video/mp4">
+        </video>
+        <div class="legenda" aria-live="polite"><b id="legenda-titulo">Cripta Úmida</b><span id="legenda-texto">Rank F. A arma ataca sozinha, os poderes se acumulam e a horda cresce em volta de você.</span></div>
+      </div>
+      <div class="abas" role="tablist" aria-label="Trechos de gameplay">
+        <button class="aba" role="tab" aria-selected="true" data-video="video/cripta.mp4" data-poster="img/p-cripta.webp" data-titulo="Cripta Úmida" data-texto="Rank F. A arma ataca sozinha, os poderes se acumulam e a horda cresce em volta de você.">
+          <img src="img/p-cripta.webp" width="640" height="360" alt="" loading="lazy"><b>Cripta Úmida</b><span class="barrinha"></span>
+        </button>
+        <button class="aba" role="tab" aria-selected="false" data-video="video/forja.mp4" data-poster="img/p-forja.webp" data-titulo="Forja de Cinzas" data-texto="Rank B. Cada masmorra tem cenário, criaturas e chefe próprios, e a Fenda cresce com o tempo.">
+          <img src="img/p-forja.webp" width="640" height="360" alt="" loading="lazy"><b>Forja de Cinzas</b><span class="barrinha"></span>
+        </button>
+        <button class="aba" role="tab" aria-selected="false" data-video="video/festa.mp4" data-poster="img/p-festa.webp" data-titulo="Festa das Lanternas" data-texto="Em Valenport, a cidade prospera, ganha eventos e acende a praça à noite.">
+          <img src="img/p-festa.webp" width="640" height="360" alt="" loading="lazy"><b>Festa das Lanternas</b><span class="barrinha"></span>
+        </button>
+        <button class="aba" role="tab" aria-selected="false" data-video="video/feira.mp4" data-poster="img/p-feira.webp" data-titulo="Dia de feira" data-texto="Barracas, moradores com rotina e viajantes que chegam com coisas raras.">
+          <img src="img/p-feira.webp" width="640" height="360" alt="" loading="lazy"><b>Dia de feira</b><span class="barrinha"></span>
+        </button>
+        <button class="aba" role="tab" aria-selected="false" data-video="video/monumento.mp4" data-poster="img/p-monumento.webp" data-titulo="O Monumento da Fenda" data-texto="Cada chefe vencido acende uma runa. Ao descer, o herói é puxado para dentro do portal.">
+          <img src="img/p-monumento.webp" width="640" height="360" alt="" loading="lazy"><b>O Monumento da Fenda</b><span class="barrinha"></span>
+        </button>
       </div>
     </div>
   </section>
 
-  <section style="padding-top:0">
-    <div class="faixa">
-      <p class="rotulo">O que tem no jogo</p>
-      <h2 class="secao-titulo">Desça, volte, cresça</h2>
-      <div class="pilares">
-        <div class="pilar"><p class="num">I</p><h3>Masmorras vivas</h3><p>Catorze masmorras, cada uma com criaturas, guardiões e chefe próprios. Escolha poderes a cada nível e monte o seu jeito de lutar.</p></div>
-        <div class="pilar"><p class="num">II</p><h3>Equipamento e classes</h3><p>Peças comuns até lendárias, com poderes exclusivos. O que você veste define a sua classe.</p></div>
-        <div class="pilar"><p class="num">III</p><h3>Uma vida na cidade</h3><p>Coma, beba, cozinhe, plante, compre imóveis, adote um pet e veja Valenport prosperar. Um guia mostra o próximo passo para quem está começando.</p></div>
+  <section class="secao" id="jogo" aria-labelledby="t-jogo">
+    <div class="miolo">
+      <h2 class="titulo-grande revela" id="t-jogo">Uma partida na Fenda. Uma vida em Valenport.</h2>
+
+      <div class="bloco" style="margin-top:clamp(2.5rem,5vw,4.5rem)">
+        <figure class="foto revela"><img src="img/bloco-fenda.webp" width="1600" height="1000" alt="O herói cercado por uma horda de criaturas, com vários poderes explodindo ao mesmo tempo" loading="lazy"></figure>
+        <div class="texto revela">
+          <h3>Na Fenda, você sobrevive até o chefe</h3>
+          <p>Você anda, a arma ataca sozinha e as criaturas chegam em hordas cada vez maiores. A cada nível, <b>escolha um poder novo</b> e monte o seu jeito de lutar. A Fenda cresce com o tempo: as paredes caem e a masmorra aumenta até o guardião e o chefe.</p>
+          <ul class="fatos">
+            <li><b>14 masmorras</b> <span>com criaturas, cenário e chefe próprios, e um rank de dificuldade, do F para cima.</span></li>
+            <li><b>Poderes que evoluem</b> <span>do nível I ao V e que se combinam em fusões.</span></li>
+            <li><b>Equipamento</b> <span>de comum a único, com poderes exclusivos em cada peça.</span></li>
+            <li><b>Fenda Rubra</b> <span>para levar aliados e aguentar o quanto puder.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bloco inverso">
+        <figure class="foto revela"><img src="img/bloco-cidade.webp" width="1600" height="1000" alt="A casa do herói decorada, com lareira, estantes e um tapete" loading="lazy"></figure>
+        <div class="texto revela">
+          <h3>Em Valenport, a vida continua</h3>
+          <p>Entre uma descida e outra, volte para a cidade. Ela tem <b>19 moradores com rotina própria</b>, feiras, festas e um clima que muda tudo: neve, chuva, enchente e seca. E no meio da rua fica a sua casa.</p>
+          <ul class="fatos">
+            <li><b>Casa para decorar</b> <span>quarto, cozinha, sala, sala de troféus e jardim, com paredes e pisos para trocar.</span></li>
+            <li><b>Horta e cozinha</b> <span>plante, colha, cozinhe e contrate ajudantes.</span></li>
+            <li><b>Um pet</b> <span>que acompanha você, carrega itens e dorme na caminha.</span></li>
+            <li><b>Mapa antigo da vila</b> <span>aperte M para ver onde cada morador costuma ficar.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bloco">
+        <figure class="foto revela"><img src="img/bloco-amigos.webp" width="1600" height="1000" alt="A vila de um amigo visitada pelo herói, com o chat aberto no canto da tela" loading="lazy"></figure>
+        <div class="texto revela">
+          <h3>Jogue com os amigos</h3>
+          <p>Adicione amigos na Taverna e veja a vila deles. <b>Aperte T</b> para falar no chat: no Global com todo mundo ou numa conversa só com um amigo.</p>
+          <ul class="fatos">
+            <li><b>Visitas</b> <span>entre na vila de um amigo e veja como ele decorou a casa.</span></li>
+            <li><b>Trocas</b> <span>ofereça peças e ouro e feche o negócio na hora.</span></li>
+            <li><b>Chat</b> <span>com opção de silenciar quem você não quer ouvir.</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="instalar" style="padding-top:0">
-    <div class="faixa instalar">
-      <div>
-        <p class="rotulo">Como instalar</p>
-        <h2 class="secao-titulo">Três passos</h2>
-        <ol class="passos">
-          <li><div><b>Baixe o instalador</b><p>Clique em "Baixar para Windows". O arquivo vai para a sua pasta Downloads.</p></div></li>
-          <li><div><b>Abra o arquivo</b><p>Dê dois cliques nele e siga as telas. Ele cria um atalho na Área de Trabalho e no Menu Iniciar.</p></div></li>
-          <li><div><b>Jogue</b><p>Abra o iamT Guild pelo atalho. O seu progresso fica salvo no computador.</p></div></li>
+  <section class="herois" aria-labelledby="t-herois">
+    <img src="img/herois.webp" width="1536" height="864" alt="Arte dos três heróis: o Guerreiro de armadura e escudo, a Maga de cajado e a Arqueira de capa verde" loading="lazy">
+    <div class="miolo">
+      <h2 class="titulo-grande revela" id="t-herois">Escolha a sua classe</h2>
+      <div class="classes">
+        <div class="revela"><h3>Guerreiro</h3><p>Espada e escudo, no meio da horda.</p></div>
+        <div class="revela" style="--atraso:90ms"><h3>Mago</h3><p>Cajado e poderes arcanos que explodem em área.</p></div>
+        <div class="revela" style="--atraso:180ms"><h3>Arqueiro</h3><p>Arco e flechas, sempre em movimento.</p></div>
+      </div>
+      <p class="intro revela">Cada classe pode ser jogada como herói ou como heroína. O que você veste define o seu jeito de lutar.</p>
+    </div>
+  </section>
+
+  <section class="secao clara" id="prints" aria-labelledby="t-prints">
+    <div class="miolo">
+      <h2 class="titulo-grande revela" id="t-prints">Imagens do jogo</h2>
+      <p class="intro revela">Clique em qualquer imagem para ver em tamanho grande.</p>
+      <div class="galeria" id="galeria">
+        <button class="enorme revela" data-grande="img/g-monumento.webp"><img src="img/g-monumento-p.webp" width="1280" height="548" alt="O Monumento da Fenda à noite, com as 14 runas acesas e o cristal brilhando" loading="lazy"><span class="nome">O Monumento da Fenda</span></button>
+        <button class="larga revela" data-grande="img/g-horda.webp"><img src="img/g-horda-p.webp" width="1280" height="720" alt="Uma horda na Cripta Úmida com poderes de raio e fogo" loading="lazy"><span class="nome">A horda na Cripta Úmida</span></button>
+        <button class="larga revela" data-grande="img/g-forja.webp"><img src="img/g-forja-p.webp" width="1280" height="720" alt="A Maga lutando na Forja de Cinzas" loading="lazy"><span class="nome">A Maga na Forja de Cinzas</span></button>
+        <button class="revela" data-grande="img/g-festa.webp"><img src="img/g-festa-p.webp" width="1280" height="720" alt="A praça de Valenport na Festa das Lanternas, à noite" loading="lazy"><span class="nome">Festa das Lanternas</span></button>
+        <button class="revela" data-grande="img/g-feira.webp"><img src="img/g-feira-p.webp" width="1280" height="720" alt="Dia de feira na praça, com barracas e moradores" loading="lazy"><span class="nome">Dia de feira</span></button>
+        <button class="revela" data-grande="img/g-cartas.webp"><img src="img/g-cartas-p.webp" width="1280" height="720" alt="A escolha de um poder novo ao subir de nível" loading="lazy"><span class="nome">Escolha um poder novo</span></button>
+        <button class="revela" data-grande="img/g-casa.webp"><img src="img/g-casa-p.webp" width="1280" height="720" alt="Uma casa decorada com móveis e plantas" loading="lazy"><span class="nome">A sua casa</span></button>
+        <button class="revela" data-grande="img/g-mapa.webp"><img src="img/g-mapa-p.webp" width="1280" height="720" alt="O mapa antigo de Valenport, desenhado em pergaminho" loading="lazy"><span class="nome">O mapa de Valenport</span></button>
+        <button class="revela" data-grande="img/g-rubra.webp"><img src="img/g-rubra-p.webp" width="1280" height="720" alt="O herói e dois aliados na Fenda Rubra" loading="lazy"><span class="nome">Fenda Rubra com aliados</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="novidades" aria-labelledby="t-novidades">
+    <div class="miolo">
+      <h2 class="titulo-grande revela" id="t-novidades">O jogo cresce toda semana</h2>
+      <p class="intro revela">As últimas atualizações. O launcher do jogo baixa cada uma sozinho.</p>
+      <div class="versoes" id="versoes">
+        <article class="versao revela">
+          <h3>Chat e pet na caminha</h3>
+          <p class="meta"><span class="tag">0.24.0</span><span class="data">14 de novembro</span></p>
+          <ul>
+            <li>Chat no canto de baixo à direita: aperte T, escreva e Enter.</li>
+            <li>Aba Global (todo mundo) e aba Amigos (conversa só com um amigo).</li>
+            <li>Com o chat fechado, as mensagens novas aparecem no canto e somem sozinhas.</li>
+            <li>Enquanto você escreve, o herói fica parado. Clique no nome de alguém para silenciar.</li>
+            <li>O pet agora dorme em cima da caminha, e não por baixo dela.</li>
+          </ul>
+        </article>
+        <article class="versao revela">
+          <h3>O Monumento da Fenda</h3>
+          <p class="meta"><span class="tag">0.23.0</span><span class="data">14 de novembro</span></p>
+          <ul>
+            <li>O Portão virou o Astrolábio da Fenda: anéis de latão girando em volta de um cristal.</li>
+            <li>O cristal mostra a Fenda do dia: verde, dourado em dia de evento, vermelho e rachado na Fenda Rubra.</li>
+            <li>Cada chefe vencido acende uma das 14 runas dos pilares, para sempre.</li>
+            <li>Ao entrar na Fenda, as runas acendem em cascata e o herói é puxado para o portal.</li>
+          </ul>
+        </article>
+        <article class="versao revela">
+          <h3>Casa nova</h3>
+          <p class="meta"><span class="tag">0.22.0</span><span class="data">13 de novembro</span></p>
+          <ul>
+            <li>Planta com corredor: quarto e cozinha em cima, sala e sala de troféus embaixo, jardim do lado.</li>
+            <li>Decorar cada cômodo, com paredes e pisos para comprar.</li>
+            <li>Mais de 80 peças novas e 4 conjuntos temáticos com bônus.</li>
+            <li>Manequim de armadura, pet em casa e visitas que comentam a decoração.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="todas"><a href="https://github.com/iamtgames/iamtgames.github.io/releases">Ver todas as versões</a></p>
+    </div>
+  </section>
+
+  <section class="secao clara" id="instalar" aria-labelledby="t-instalar">
+    <div class="miolo instalar">
+      <div class="passos">
+        <h2 class="titulo-grande revela" id="t-instalar">Baixe e jogue em três passos</h2>
+        <ol>
+          <li class="revela"><div><b>Baixe o instalador</b><p>Clique em "Baixar para Windows". O arquivo vai para a sua pasta Downloads.</p></div></li>
+          <li class="revela"><div><b>Abra o arquivo</b><p>Dê dois cliques e siga as telas. Ele cria um atalho na Área de Trabalho e no Menu Iniciar.</p></div></li>
+          <li class="revela"><div><b>Jogue</b><p>Abra o iamT Guild pelo atalho. O seu progresso fica salvo no computador.</p></div></li>
         </ol>
-        <div class="aviso">
-          <b>Já tem o jogo?</b> Baixe a versão nova e instale por cima: o seu progresso continua salvo.
+        <div class="aviso revela">
+          <h3>Apareceu "O Windows protegeu o computador"?</h3>
+          <p>É normal e não quer dizer que o arquivo tem vírus. O jogo é independente e o instalador ainda não tem a assinatura digital paga que a Microsoft pede. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>. Se quiser ter certeza de que o arquivo é o original, confira o código SHA-256 ao lado.</p>
         </div>
-        <div class="aviso">
-          <b>Apareceu "O Windows protegeu o computador"?</b> É normal: o jogo é independente e ainda não tem assinatura digital. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>.
+        <div class="aviso revela" style="border-left-color:var(--carmesim)">
+          <h3>Já tem o jogo?</h3>
+          <p>O launcher atualiza sozinho. Se preferir, baixe a versão nova e instale por cima: o seu progresso continua salvo.</p>
         </div>
       </div>
-      <aside class="ficha" aria-label="Ficha do jogo">
-        <h3>Ficha</h3>
+      <aside class="ficha revela" aria-label="Ficha do jogo">
+        <h3>iamT Guild</h3>
         <dl>
-          <dt>Versão</dt><dd data-info="versao">0.12.2</dd>
+          <dt>Versão</dt><dd data-versao>0.24.0</dd>
           <dt>Sistema</dt><dd>Windows 10 ou 11, 64 bits</dd>
-          <dt>Tamanho</dt><dd data-info="tamanho">96 MB (instalador)</dd>
+          <dt>Tamanho</dt><dd data-tamanho="instalador">117 MB (instalador)</dd>
           <dt>Preço</dt><dd>Grátis</dd>
           <dt>Idioma</dt><dd>Português</dd>
           <dt>Criado por</dt><dd>iamT</dd>
         </dl>
-        <p class="outra">Não quer instalar? Baixe a <a data-baixar="portatil" href="#">versão portátil</a> (<span data-info="portatil">.zip, 117 MB</span>): extraia e abra o <b>iamT Guild.exe</b>. Para desinstalar a versão instalada: Configurações do Windows → Aplicativos → iamT Guild.</p>
+        <a class="botao" data-baixar="instalador" href="#instalar">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.2 4.5v7H3zm0 13 7.2 1v-6.9H3zm8.1 1.1L21 21v-8.4h-9.9zm0-15.2v7.1H21V3z"/></svg>
+          Baixar o instalador
+        </a>
+        <div class="sha" id="sha" hidden>
+          Código SHA-256 do instalador
+          <code id="sha-codigo"></code>
+          <button type="button" id="sha-copiar">Copiar código</button>
+          <p style="margin-top:.7rem">Para conferir no Windows, abra o PowerShell na pasta Downloads e digite <b>Get-FileHash</b> seguido do nome do arquivo. O código tem que ser igual.</p>
+        </div>
+        <p class="outra">Não quer instalar? Baixe a <a data-baixar="portatil" href="#instalar">versão portátil</a> (<span data-tamanho="portatil">.zip, 131 MB</span>): extraia e abra o <b>iamT Guild.exe</b>. Para desinstalar a versão instalada: Configurações do Windows, Aplicativos, iamT Guild.</p>
       </aside>
     </div>
   </section>
 
-  <section class="final">
-    <div class="faixa">
-      <h2 class="secao-titulo">A Guilda está contratando</h2>
-      <p class="chamada" style="text-shadow:none">Valenport precisa de quem ainda tem coragem.</p>
-      <div class="baixar">
-        <a class="botao" data-baixar="instalador" href="#">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.2 4.5v7H3zm0 13 7.2 1v-6.9H3zm8.1 1.1L21 21v-8.4h-9.9zm0-15.2v7.1H21V3z"/></svg>
-          <span>Baixar para Windows<small data-info="instalador">Instalador · grátis</small></span>
-        </a>
+  <section class="secao" aria-labelledby="t-perguntas">
+    <div class="miolo">
+      <h2 class="titulo-grande revela" id="t-perguntas">Perguntas comuns</h2>
+      <div class="perguntas">
+        <details class="revela"><summary>O jogo é grátis?</summary><p>Sim. É grátis para baixar e jogar.</p></details>
+        <details class="revela"><summary>Preciso de internet?</summary><p>O jogo salva tudo no seu computador. A internet é usada para atualizar o jogo e para o chat, os amigos e as trocas.</p></details>
+        <details class="revela"><summary>Perco meu progresso se atualizar?</summary><p>Não. Tanto o launcher quanto o instalador por cima mantêm o seu progresso salvo.</p></details>
+        <details class="revela"><summary>Roda em Mac ou Linux?</summary><p>Por enquanto, só em Windows 10 ou 11 de 64 bits.</p></details>
+        <details class="revela"><summary>Como desinstalo?</summary><p>Na versão instalada: Configurações do Windows, Aplicativos, iamT Guild. Na portátil, é só apagar a pasta.</p></details>
+        <details class="revela"><summary>Onde aprendo os poderes e as peças?</summary><p>Na <a href="wiki/">wiki do jogo</a>: poderes, classes, equipamentos, rúnicas, atributos e combinações, com busca.</p></details>
       </div>
+    </div>
+  </section>
+
+  <section class="fecho" aria-labelledby="t-fecho">
+    <div class="miolo">
+      <h2 id="t-fecho" class="revela">A Guilda está contratando.</h2>
+      <p class="revela">Valenport precisa de quem ainda tem coragem. Baixe o iamT Guild e desça na Fenda hoje.</p>
+      <a class="botao revela" data-baixar="instalador" href="#instalar">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.2 4.5v7H3zm0 13 7.2 1v-6.9H3zm8.1 1.1L21 21v-8.4h-9.9zm0-15.2v7.1H21V3z"/></svg>
+        Baixar para Windows
+      </a>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="faixa">iamT Guild · feito por <a href="/">iamT</a></div>
+  <div class="miolo">
+    <div class="grande" aria-hidden="true">iamT Guild</div>
+    <div class="linha">
+      <span>iamT Guild · feito por <a href="/">iamT</a></span>
+      <span><a href="wiki/">Wiki do jogo</a> · <a href="https://github.com/iamtgames/iamtgames.github.io/releases">Todas as versões</a></span>
+    </div>
+  </div>
 </footer>
 
+<div class="zoom" id="zoom" role="dialog" aria-modal="true" aria-label="Imagem em tamanho grande">
+  <button type="button" class="ant" id="zoom-ant" aria-label="Imagem anterior">‹</button>
+  <figure><img id="zoom-img" alt=""><figcaption id="zoom-legenda"></figcaption></figure>
+  <button type="button" class="prox" id="zoom-prox" aria-label="Próxima imagem">›</button>
+  <button type="button" id="zoom-fechar">Fechar</button>
+</div>
+
 <script>
-/* ===== ONDE TROCAR OS LINKS A CADA VERSÃO NOVA =====
+/* ===== ONDE TROCAR A VERSÃO =====
    Os arquivos ficam nos "Releases" do GitHub (aceita arquivos grandes).
-   Ao lançar uma versão nova: mude VERSAO e, se precisar, os tamanhos. */
+   A cada versão nova, mude só VERSAO. O tamanho, o código SHA-256 e a lista
+   de novidades abaixo são lidos sozinhos do GitHub (se falhar, valem os textos fixos da página). */
 var VERSAO = "0.24.0";
-var BASE = "https://github.com/iamtgames/iamtgames.github.io/releases/download/iamtguild-" + VERSAO + "/";
-var DOWNLOADS = {
-  instalador: { arquivo: "iamT-Guild-Instalador-" + VERSAO + ".exe", texto: "Instalador · 104 MB · grátis" },
-  portatil:   { arquivo: "iamT-Guild-Portatil-" + VERSAO + ".zip",   texto: ".zip, 117 MB" }
+var REPO = "iamtgames/iamtgames.github.io";
+var BASE = "https://github.com/" + REPO + "/releases/download/iamtguild-" + VERSAO + "/";
+var ARQUIVOS = {
+  instalador: "iamT-Guild-Instalador-" + VERSAO + ".exe",
+  portatil: "iamT-Guild-Portatil-" + VERSAO + ".zip"
 };
-document.querySelectorAll("[data-baixar]").forEach(function (a) {
-  var d = DOWNLOADS[a.getAttribute("data-baixar")];
-  if (d) a.href = BASE + d.arquivo;
-});
-document.querySelectorAll("[data-info]").forEach(function (el) {
-  var k = el.getAttribute("data-info");
-  if (k === "versao") el.textContent = VERSAO;
-  else if (DOWNLOADS[k]) el.textContent = DOWNLOADS[k].texto;
-});
+
+(function () {
+  "use strict";
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var calmo = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var poucoDado = navigator.connection && navigator.connection.saveData;
+
+  /* links de download e versão */
+  $$("[data-baixar]").forEach(function (a) { a.href = BASE + ARQUIVOS[a.getAttribute("data-baixar")]; });
+  $$("[data-versao]").forEach(function (e) { e.textContent = VERSAO; });
+
+  /* barra do topo */
+  var barra = $("#barra");
+  function barraTopo() { barra.classList.toggle("cheia", window.scrollY > 40); }
+  barraTopo(); window.addEventListener("scroll", barraTopo, { passive: true });
+
+  /* entrada ao rolar */
+  var revelas = $$(".revela");
+  if ("IntersectionObserver" in window && !calmo) {
+    var vendo = new IntersectionObserver(function (itens) {
+      itens.forEach(function (i) { if (i.isIntersecting) { i.target.classList.add("visivel"); vendo.unobserve(i.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    revelas.forEach(function (e) { vendo.observe(e); });
+  } else { revelas.forEach(function (e) { e.classList.add("visivel"); }); }
+
+  /* vídeo da abertura: só toca quando aparece na tela */
+  var abertura = $("#video-abertura");
+  if (abertura && !calmo && !poucoDado) {
+    var tocaAbertura = function () { var p = abertura.play(); if (p && p.catch) p.catch(function () {}); };
+    new IntersectionObserver(function (i) { if (i[0].isIntersecting) tocaAbertura(); else abertura.pause(); }, { threshold: 0.1 }).observe(abertura);
+    abertura.addEventListener("playing", function () { var po = $(".abertura .poster"); if (po) po.style.visibility = "hidden"; });
+  }
+
+  /* palco de gameplay: um vídeo, cinco trechos, passa para o próximo sozinho */
+  var palco = $("#video-palco"), abas = $$(".aba");
+  var atual = 0, vistoPeloUsuario = false, cancelaTroca = 0;
+  function mostrar(i, tocar) {
+    atual = i;
+    abas.forEach(function (a, n) { a.setAttribute("aria-selected", n === i ? "true" : "false"); a.style.removeProperty("--p"); });
+    var a = abas[i];
+    $("#legenda-titulo").textContent = a.dataset.titulo;
+    $("#legenda-texto").textContent = a.dataset.texto;
+    palco.classList.add("some");
+    clearTimeout(cancelaTroca);
+    cancelaTroca = setTimeout(function () {
+      palco.poster = a.dataset.poster;
+      palco.src = a.dataset.video;
+      palco.load();
+      palco.classList.remove("some");
+      if (tocar) { var p = palco.play(); if (p && p.catch) p.catch(function () {}); }
+    }, 260);
+  }
+  abas.forEach(function (a, i) {
+    a.setAttribute("role", "tab");
+    a.addEventListener("click", function () { vistoPeloUsuario = true; mostrar(i, true); });
+  });
+  palco.addEventListener("timeupdate", function () {
+    if (palco.duration) abas[atual].style.setProperty("--p", (palco.currentTime / palco.duration * 100) + "%");
+  });
+  palco.addEventListener("ended", function () { mostrar((atual + 1) % abas.length, true); });
+  if (!calmo && !poucoDado) {
+    new IntersectionObserver(function (i) {
+      if (i[0].isIntersecting) { var p = palco.play(); if (p && p.catch) p.catch(function () {}); } else palco.pause();
+    }, { threshold: 0.45 }).observe(palco);
+  } else { palco.controls = true; }
+
+  /* galeria em tamanho grande */
+  var botoes = $$("#galeria button"), zoom = $("#zoom"), zimg = $("#zoom-img"), zleg = $("#zoom-legenda"), pos = 0, voltarPara = null;
+  function abrirZoom(i) {
+    pos = (i + botoes.length) % botoes.length;
+    var b = botoes[pos];
+    zimg.src = b.dataset.grande; zimg.alt = $("img", b).alt; zleg.textContent = $(".nome", b).textContent;
+    zoom.classList.add("aberto");
+    document.body.style.overflow = "hidden";
+    $("#zoom-fechar").focus();
+  }
+  function fecharZoom() { zoom.classList.remove("aberto"); document.body.style.overflow = ""; if (voltarPara) voltarPara.focus(); }
+  botoes.forEach(function (b, i) { b.addEventListener("click", function () { voltarPara = b; abrirZoom(i); }); });
+  $("#zoom-fechar").addEventListener("click", fecharZoom);
+  $("#zoom-ant").addEventListener("click", function () { abrirZoom(pos - 1); });
+  $("#zoom-prox").addEventListener("click", function () { abrirZoom(pos + 1); });
+  zoom.addEventListener("click", function (e) { if (e.target === zoom) fecharZoom(); });
+  document.addEventListener("keydown", function (e) {
+    if (!zoom.classList.contains("aberto")) return;
+    if (e.key === "Escape") fecharZoom();
+    if (e.key === "ArrowLeft") abrirZoom(pos - 1);
+    if (e.key === "ArrowRight") abrirZoom(pos + 1);
+  });
+
+  /* dados vivos do GitHub: tamanho, SHA-256 e novidades */
+  function mb(bytes) { return Math.round(bytes / 1048576) + " MB"; }
+  var meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+  function limpar(t) { return t.replace(/\*\*/g, "").replace(/`/g, "").trim(); }
+  function desenharVersoes(lista) {
+    var alvo = $("#versoes"), novos = [];
+    lista.slice(0, 5).forEach(function (r, n) {
+      var linhas = (r.body || "").split(/\r?\n/).map(limpar).filter(Boolean);
+      var titulo = (linhas.shift() || "").replace(/\s*\([\d.]+\)\s*:?\s*$/, "").replace(/:$/, "");
+      var itens = linhas.filter(function (l) { return /^[-*]\s/.test(l); }).map(function (l) { return l.replace(/^[-*]\s+/, ""); });
+      if (!titulo || !itens.length) return;
+      var d = new Date(r.published_at);
+      var art = document.createElement("article"); art.className = "versao revela visivel";
+      var tag = document.createElement("span"); tag.className = "tag"; tag.textContent = r.tag_name.replace("iamtguild-", "");
+      var dt = document.createElement("span"); dt.className = "data"; dt.textContent = d.getDate() + " de " + meses[d.getMonth()];
+      var h = document.createElement("h3"); h.textContent = titulo;
+      var ul = document.createElement("ul");
+      itens.slice(0, n === 0 ? 6 : 4).forEach(function (t) { var li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
+      var meta = document.createElement("p"); meta.className = "meta"; meta.appendChild(tag); meta.appendChild(dt);
+      art.appendChild(h); art.appendChild(meta); art.appendChild(ul);
+      novos.push(art);
+    });
+    if (novos.length >= 2) { alvo.textContent = ""; novos.forEach(function (a) { alvo.appendChild(a); }); }
+  }
+  function aplicar(lista) {
+    var releases = lista.filter(function (r) { return /^iamtguild-/.test(r.tag_name) && !r.draft; });
+    var minha = releases.filter(function (r) { return r.tag_name === "iamtguild-" + VERSAO; })[0];
+    if (minha) {
+      minha.assets.forEach(function (a) {
+        var chave = a.name === ARQUIVOS.instalador ? "instalador" : a.name === ARQUIVOS.portatil ? "portatil" : null;
+        if (!chave) return;
+        $$('[data-tamanho="' + chave + '"]').forEach(function (e) { e.textContent = (chave === "portatil" ? ".zip, " : "") + mb(a.size) + (e.closest(".ficha") && chave === "instalador" ? " (instalador)" : ""); });
+        if (chave === "instalador" && a.digest) {
+          $("#sha-codigo").textContent = a.digest.replace("sha256:", "");
+          $("#sha").hidden = false;
+        }
+      });
+    }
+    desenharVersoes(releases);
+  }
+  try {
+    var guardado = sessionStorage.getItem("iamt-releases");
+    if (guardado) aplicar(JSON.parse(guardado));
+    else fetch("https://api.github.com/repos/" + REPO + "/releases?per_page=10", { headers: { Accept: "application/vnd.github+json" } })
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function (lista) { try { sessionStorage.setItem("iamt-releases", JSON.stringify(lista)); } catch (e) {} aplicar(lista); })
+      .catch(function () {});
+  } catch (e) {}
+
+  $("#sha-copiar").addEventListener("click", function () {
+    var b = this, t = $("#sha-codigo").textContent;
+    if (navigator.clipboard) navigator.clipboard.writeText(t).then(function () { b.textContent = "Copiado!"; setTimeout(function () { b.textContent = "Copiar código"; }, 1800); });
+  });
+})();
 </script>
 </body>
 </html>
